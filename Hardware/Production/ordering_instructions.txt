@@ -7,6 +7,6 @@ oz copper, 1oz
 finish, HASL lead free
 stencils, top+bottom
 pcs per panel, 16
-min trace width, 0.0889mm / 0.0035in
+min trace width, 0.1016mm / 0.0040in
 min drill size, 0.2000mm / 0.0079in
 filename to layer stackup 1/2/3/4: GTL, GL2, GL3, GBL
