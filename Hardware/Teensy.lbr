@@ -1814,12 +1814,12 @@ bottom port silicon digital microphone with a single bit PDM output.</descriptio
 <pin name="LED_DAT/SPI_MOSI" x="22.86" y="48.26" length="short" rot="R180"/>
 <pin name="SPI_MISO" x="22.86" y="45.72" length="short" rot="R180"/>
 <pin name="BATT_VIN/3" x="-22.86" y="-30.48" length="short"/>
-<pin name="RX1" x="22.86" y="-5.08" length="short" rot="R180"/>
-<pin name="TX1" x="22.86" y="-2.54" length="short" rot="R180"/>
-<pin name="CTS1" x="22.86" y="-10.16" length="short" rot="R180"/>
-<pin name="RTS1" x="22.86" y="-7.62" length="short" rot="R180"/>
-<pin name="RX2" x="22.86" y="0" length="short" rot="R180"/>
-<pin name="TX2" x="22.86" y="2.54" length="short" rot="R180"/>
+<pin name="RX1" x="22.86" y="0" length="short" rot="R180"/>
+<pin name="TX1" x="22.86" y="2.54" length="short" rot="R180"/>
+<pin name="CTS1" x="22.86" y="-5.08" length="short" rot="R180"/>
+<pin name="RTS1" x="22.86" y="-2.54" length="short" rot="R180"/>
+<pin name="RX2" x="22.86" y="-10.16" length="short" rot="R180"/>
+<pin name="TX2" x="22.86" y="-7.62" length="short" rot="R180"/>
 <pin name="!BOOT!" x="-22.86" y="45.72" length="short"/>
 <pin name="G11" x="22.86" y="-43.18" length="short" rot="R180"/>
 <pin name="AUD_OUT" x="-22.86" y="-2.54" length="short"/>
