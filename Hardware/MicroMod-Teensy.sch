@@ -15449,7 +15449,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <parts>
 <part name="FRAME1" library="SparkFun-Aesthetics" deviceset="FRAME-LEDGER" device=""/>
 <part name="U1" library="Teensy" deviceset="IMXRT1062DV" device="10X10"/>
-<part name="TP1" library="SparkFun-Connectors" deviceset="TEST-POINT" device="2" value="32kHz Test"/>
+<part name="TP1" library="SparkFun-Connectors" deviceset="TEST-POINT" device="2" value=""/>
 <part name="D1" library="SparkFun-LED" deviceset="LED-BLUE" device="0603" value="BLUE"/>
 <part name="R1" library="SparkFun-Resistors" deviceset="1KOHM" device="-0402T-1/16W-1%" value="1k"/>
 <part name="GND1" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
@@ -15497,7 +15497,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="C13" library="SparkFun-Capacitors" deviceset="0.22UF" device="-0402T-10V-10%" value="0.22uF"/>
 <part name="GND21" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="GND22" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
-<part name="TP3" library="SparkFun-Connectors" deviceset="TEST-POINT" device="2" value="TEST-POINT2"/>
+<part name="TP3" library="SparkFun-Connectors" deviceset="TEST-POINT" device="2" value=""/>
 <part name="SUPPLY10" library="SparkFun-PowerSymbols" deviceset="3.3V" device=""/>
 <part name="C14" library="SparkFun-Capacitors" deviceset="4.7UF" device="-0402_TIGHT-6.3V-20%-X5R" value="4.7uF"/>
 <part name="C15" library="SparkFun-Capacitors" deviceset="0.22UF" device="-0402T-10V-10%" value="0.22uF"/>
@@ -15518,7 +15518,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="GND34" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="C22" library="SparkFun-Capacitors" deviceset="0.22UF" device="-0402T-10V-10%" value="0.22uF"/>
 <part name="GND35" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
-<part name="TP4" library="SparkFun-Connectors" deviceset="TEST-POINT" device="2" value="TEST-POINT2"/>
+<part name="TP4" library="SparkFun-Connectors" deviceset="TEST-POINT" device="2" value=""/>
 <part name="SUPPLY16" library="SparkFun-PowerSymbols" deviceset="V_BATT" device=""/>
 <part name="SUPPLY17" library="SparkFun-PowerSymbols" deviceset="3.3V" device=""/>
 <part name="C23" library="SparkFun-Capacitors" deviceset="0.22UF" device="-0402T-10V-10%" value="0.22uF"/>
@@ -15532,9 +15532,9 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="GND39" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="C27" library="SparkFun-Capacitors" deviceset="4.7UF" device="-0402_TIGHT-6.3V-20%-X5R" value="4.7uF"/>
 <part name="GND40" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
-<part name="TP5" library="SparkFun-Connectors" deviceset="TEST-POINT" device="2" value="TEST-POINT2"/>
-<part name="TP6" library="SparkFun-Connectors" deviceset="TEST-POINT" device="2" value="TEST-POINT2"/>
-<part name="TP7" library="SparkFun-Connectors" deviceset="TEST-POINT" device="2" value="TEST-POINT2"/>
+<part name="TP5" library="SparkFun-Connectors" deviceset="TEST-POINT" device="2" value=""/>
+<part name="TP6" library="SparkFun-Connectors" deviceset="TEST-POINT" device="2" value=""/>
+<part name="TP7" library="SparkFun-Connectors" deviceset="TEST-POINT" device="2" value=""/>
 <part name="FD1" library="SparkFun-Aesthetics" deviceset="FIDUCIAL" device="UFIDUCIAL"/>
 <part name="FD2" library="SparkFun-Aesthetics" deviceset="FIDUCIAL" device="UFIDUCIAL"/>
 <part name="FD3" library="SparkFun-Aesthetics" deviceset="FIDUCIAL" device="UFIDUCIAL"/>
@@ -15546,18 +15546,18 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="R7" library="SparkFun-Resistors" deviceset="1KOHM" device="-0402T-1/16W-1%" value="1k"/>
 <part name="D5" library="SparkFun-LED" deviceset="LED-YELLOW" device="0603" value="Yellow"/>
 <part name="SUPPLY19" library="SparkFun-PowerSymbols" deviceset="3.3V" device=""/>
-<part name="TP8" library="SparkFun-Connectors" deviceset="TEST-POINT" device="2" value="TEST-POINT2"/>
-<part name="TP9" library="SparkFun-Connectors" deviceset="TEST-POINT" device="2" value="TEST-POINT2"/>
+<part name="TP8" library="SparkFun-Connectors" deviceset="TEST-POINT" device="2" value=""/>
+<part name="TP9" library="SparkFun-Connectors" deviceset="TEST-POINT" device="2" value=""/>
 <part name="C28" library="SparkFun-Capacitors" deviceset="0.22UF" device="-0402T-10V-10%" value="0.22uF"/>
 <part name="SUPPLY20" library="SparkFun-PowerSymbols" deviceset="3.3V" device=""/>
 <part name="GND43" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
-<part name="TP10" library="SparkFun-Connectors" deviceset="TEST-POINT" device="2" value="TEST-POINT2"/>
-<part name="TP11" library="SparkFun-Connectors" deviceset="TEST-POINT" device="2" value="TEST-POINT2"/>
+<part name="TP10" library="SparkFun-Connectors" deviceset="TEST-POINT" device="2" value=""/>
+<part name="TP11" library="SparkFun-Connectors" deviceset="TEST-POINT" device="2" value=""/>
 <part name="SUPPLY6" library="SparkFun-PowerSymbols" deviceset="3.3V" device=""/>
 <part name="GND8" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="L2" library="SparkFun-Coils" deviceset="4.7μH_SHIELDED_INDUCTOR" device="" value="4.7μH"/>
 <part name="J1" library="Teensy" deviceset="MICROMOD" device="-2222"/>
-<part name="TP2" library="SparkFun-Connectors" deviceset="TEST-POINT" device="2" value="TEST-POINT2"/>
+<part name="TP2" library="SparkFun-Connectors" deviceset="TEST-POINT" device="2" value=""/>
 <part name="Q1" library="SparkFun-DiscreteSemi" deviceset="MOSFET_PCH" device="-DMG2305UX-7" value="20V/4.2A/52mΩ/1.4W"/>
 <part name="Q2" library="SparkFun-DiscreteSemi" deviceset="MOSFET-NCH" device="-RE1C00UNTL" value="20V/0.2A/8MHz/1.2Ω/1Vth"/>
 <part name="R2" library="SparkFun-Resistors" deviceset="100KOHM" device="-0402T-1/16W-1%" value="100k"/>
