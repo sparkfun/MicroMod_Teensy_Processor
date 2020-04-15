@@ -20595,7 +20595,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="193.04" y1="58.42" x2="193.04" y2="55.88" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$1" class="0">
+<net name="TP1" class="0">
 <segment>
 <pinref part="U1" gate="U1" pin="AD_B0_00"/>
 <pinref part="TP1" gate="G$1" pin="1"/>
@@ -21109,7 +21109,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <pinref part="J1" gate="J1" pin="USBHOST_D+"/>
 </segment>
 </net>
-<net name="N$30" class="0">
+<net name="TP5" class="0">
 <segment>
 <pinref part="U1" gate="U1" pin="VDD_SNVS_CAP"/>
 <wire x1="137.16" y1="73.66" x2="121.92" y2="73.66" width="0.1524" layer="91"/>
@@ -21120,7 +21120,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <pinref part="TP5" gate="G$1" pin="1"/>
 </segment>
 </net>
-<net name="N$33" class="0">
+<net name="TP6" class="0">
 <segment>
 <pinref part="U1" gate="U1" pin="NVCC_PLL"/>
 <wire x1="137.16" y1="76.2" x2="111.76" y2="76.2" width="0.1524" layer="91"/>
@@ -21135,7 +21135,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <pinref part="TP6" gate="G$1" pin="1"/>
 </segment>
 </net>
-<net name="N$34" class="0">
+<net name="TP7" class="0">
 <segment>
 <pinref part="U1" gate="U1" pin="VDD_HIGH_CAP"/>
 <wire x1="137.16" y1="78.74" x2="91.44" y2="78.74" width="0.1524" layer="91"/>
