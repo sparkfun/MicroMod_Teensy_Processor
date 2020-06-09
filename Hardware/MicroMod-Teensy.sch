@@ -18764,7 +18764,9 @@ Physical Characteristics:
 <connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="PROD_ID" value="NDUC-14206" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
