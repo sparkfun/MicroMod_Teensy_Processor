@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.6.0">
+<eagle version="9.6.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="yes"/>
@@ -20715,28 +20715,16 @@ battery or external power</text>
 <pinref part="J1" gate="J1" pin="SPI_MOSI/SDIO_CMD"/>
 </segment>
 </net>
-<net name="38/DAT3" class="0">
-<segment>
-<wire x1="162.56" y1="93.98" x2="165.1" y2="93.98" width="0.1524" layer="91"/>
-<pinref part="U1" gate="U1" pin="SD_B0_04"/>
-<label x="165.1" y="93.98" size="1.27" layer="95" xref="yes"/>
-</segment>
+<net name="39/DAT3" class="0">
 <segment>
 <wire x1="297.18" y1="241.3" x2="299.72" y2="241.3" width="0.1524" layer="91"/>
 <label x="299.72" y="241.3" size="1.27" layer="95" xref="yes"/>
 <pinref part="J1" gate="J1" pin="SPI_!CS!/SDIO_DATA3"/>
 </segment>
-</net>
-<net name="39/DAT2" class="0">
 <segment>
 <wire x1="162.56" y1="91.44" x2="165.1" y2="91.44" width="0.1524" layer="91"/>
 <pinref part="U1" gate="U1" pin="SD_B0_05"/>
 <label x="165.1" y="91.44" size="1.27" layer="95" xref="yes"/>
-</segment>
-<segment>
-<wire x1="297.18" y1="243.84" x2="299.72" y2="243.84" width="0.1524" layer="91"/>
-<label x="299.72" y="243.84" size="1.27" layer="95" xref="yes"/>
-<pinref part="J1" gate="J1" pin="SDIO_DATA2"/>
 </segment>
 </net>
 <net name="N$31" class="0">
@@ -21840,6 +21828,18 @@ battery or external power</text>
 <pinref part="U3" gate="U1" pin="PTB1"/>
 <wire x1="396.24" y1="220.98" x2="398.78" y2="220.98" width="0.1524" layer="91"/>
 <label x="398.78" y="220.98" size="1.27" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="38/DAT2" class="0">
+<segment>
+<wire x1="162.56" y1="93.98" x2="165.1" y2="93.98" width="0.1524" layer="91"/>
+<pinref part="U1" gate="U1" pin="SD_B0_04"/>
+<label x="165.1" y="93.98" size="1.27" layer="95" xref="yes"/>
+</segment>
+<segment>
+<wire x1="297.18" y1="243.84" x2="299.72" y2="243.84" width="0.1524" layer="91"/>
+<label x="299.72" y="243.84" size="1.27" layer="95" xref="yes"/>
+<pinref part="J1" gate="J1" pin="SDIO_DATA2"/>
 </segment>
 </net>
 </nets>
