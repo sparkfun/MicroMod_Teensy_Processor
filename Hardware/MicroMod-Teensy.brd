@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.6.2">
+<eagle version="9.6.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.05" altunitdist="mm" altunit="mm"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.005" altunitdist="inch" altunit="inch"/>
 <layers>
-<layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
+<layer number="1" name="Top" color="4" fill="1" visible="no" active="yes"/>
 <layer number="2" name="Horz" color="1" fill="3" visible="no" active="yes"/>
 <layer number="15" name="Vert" color="4" fill="6" visible="no" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -16,9 +16,9 @@
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="20" name="Dimension" color="24" fill="1" visible="yes" active="yes"/>
-<layer number="21" name="tPlace" color="16" fill="1" visible="yes" active="yes"/>
-<layer number="22" name="bPlace" color="14" fill="1" visible="yes" active="yes"/>
-<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="21" name="tPlace" color="16" fill="1" visible="no" active="yes"/>
+<layer number="22" name="bPlace" color="14" fill="1" visible="no" active="yes"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="yes"/>
 <layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="25" name="tNames" color="7" fill="1" visible="no" active="yes"/>
 <layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
@@ -40,13 +40,13 @@
 <layer number="42" name="bRestrict" color="1" fill="10" visible="no" active="yes"/>
 <layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="yes"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
-<layer number="45" name="Holes" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
 <layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
 <layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
 <layer number="48" name="Document" color="7" fill="1" visible="no" active="yes"/>
-<layer number="49" name="Reference" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="49" name="Reference" color="7" fill="1" visible="no" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="yes"/>
-<layer number="51" name="tDocu" color="6" fill="1" visible="yes" active="yes"/>
+<layer number="51" name="tDocu" color="6" fill="1" visible="no" active="yes"/>
 <layer number="52" name="bDocu" color="7" fill="1" visible="no" active="yes"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="no" active="no"/>
 <layer number="92" name="Busses" color="1" fill="1" visible="no" active="no"/>
@@ -190,7 +190,7 @@
 <wire x1="22" y1="4.99" x2="22" y2="18.99" width="0.1016" layer="51"/>
 <wire x1="22" y1="18.99" x2="0" y2="18.99" width="0.1016" layer="51"/>
 <wire x1="0" y1="18.99" x2="0" y2="4.99" width="0.1016" layer="51"/>
-<text x="19" y="21" size="0.75" layer="16" font="vector" ratio="20" rot="MR0" align="center">v12</text>
+<text x="19" y="21" size="0.75" layer="16" font="vector" ratio="20" rot="MR0" align="center">v13</text>
 <text x="30.35" y="31.67" size="1.778" layer="51" font="vector" ratio="15">0.8mm PCB
 45 degree chamfered edge
 Four layer design</text>
@@ -4902,7 +4902,6 @@ Out</text>
 <wire x1="11.575" y1="9.365" x2="11.3528" y2="9.365" width="0.1016" layer="1"/>
 <wire x1="11.3429" y1="9.3749" x2="11.3528" y2="9.365" width="0.1016" layer="1"/>
 <via x="11.3429" y="9.3749" extent="1-16" drill="0.2"/>
-<wire x1="12.8" y1="11.79" x2="13" y2="11.79" width="0.1016" layer="16"/>
 <via x="13.056" y="16.213" extent="1-16" drill="0.2"/>
 <via x="13.756" y="15.313" extent="1-16" drill="0.2"/>
 <wire x1="6.375" y1="14.565" x2="6.05" y2="14.89" width="0.1016" layer="1"/>
@@ -4929,7 +4928,6 @@ Out</text>
 <wire x1="5.4" y1="9.29" x2="5.1" y2="9.29" width="0.1016" layer="16"/>
 <wire x1="5.1" y1="9.29" x2="4.7" y2="9.69" width="0.1016" layer="16"/>
 <wire x1="11.575" y1="11.315" x2="11.9071" y2="10.9829" width="0.1016" layer="1"/>
-<wire x1="11.9071" y1="10.9829" x2="13.86459375" y2="10.9829" width="0.1016" layer="1"/>
 <wire x1="10.55546875" y1="7.7051" x2="10.71998125" y2="7.7051" width="0.1016" layer="1"/>
 <wire x1="10.71998125" y1="7.7051" x2="10.77998125" y2="7.7651" width="0.1016" layer="1"/>
 <wire x1="10.77998125" y1="7.7651" x2="11.2249" y2="7.7651" width="0.1016" layer="1"/>

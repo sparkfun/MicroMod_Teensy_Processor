@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.6.2">
+<eagle version="9.6.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="yes"/>
@@ -19458,9 +19458,9 @@ Out</text>
 <wire x1="20.32" y1="-45.72" x2="-20.32" y2="-45.72" width="0.254" layer="94"/>
 <wire x1="-20.32" y1="-45.72" x2="-20.32" y2="53.34" width="0.254" layer="94"/>
 <pin name="SPI_SCK/SDIO_CLK" x="22.86" y="50.8" length="short" rot="R180"/>
-<pin name="SPI_MOSI/SDIO_CMD" x="22.86" y="48.26" length="short" rot="R180"/>
+<pin name="SPI_SDO/SDIO_CMD" x="22.86" y="48.26" length="short" rot="R180"/>
 <pin name="SDIO_DATA1" x="22.86" y="43.18" length="short" rot="R180"/>
-<pin name="SPI_MISO/SDIO_DATA0" x="22.86" y="45.72" length="short" rot="R180"/>
+<pin name="SPI_SDI/SDIO_DATA0" x="22.86" y="45.72" length="short" rot="R180"/>
 <pin name="SDIO_DATA2" x="22.86" y="40.64" length="short" rot="R180"/>
 <pin name="SPI_!CS!/SDIO_DATA3" x="22.86" y="38.1" length="short" rot="R180"/>
 <pin name="AUD_MCLK" x="-22.86" y="0" length="short"/>
@@ -19476,8 +19476,8 @@ Out</text>
 <pin name="PWM1" x="22.86" y="12.7" length="short" rot="R180"/>
 <pin name="PWM0" x="22.86" y="15.24" length="short" rot="R180"/>
 <pin name="SPI_SCK1" x="22.86" y="33.02" length="short" rot="R180"/>
-<pin name="SPI_MOSI1" x="22.86" y="30.48" length="short" rot="R180"/>
-<pin name="SPI_MISO1" x="22.86" y="27.94" length="short" rot="R180"/>
+<pin name="SPI_SDO1" x="22.86" y="30.48" length="short" rot="R180"/>
+<pin name="SPI_SDI1" x="22.86" y="27.94" length="short" rot="R180"/>
 <pin name="BATT_VIN/3" x="-22.86" y="-30.48" length="short"/>
 <pin name="RX1" x="22.86" y="0" length="short" rot="R180"/>
 <pin name="TX1" x="22.86" y="2.54" length="short" rot="R180"/>
@@ -19652,12 +19652,12 @@ Out</text>
 <connect gate="J1" pin="SDIO_DATA2" pad="68"/>
 <connect gate="J1" pin="SPI_!CS!/SDIO_DATA3" pad="70"/>
 <connect gate="J1" pin="SPI_!CS!1" pad="55"/>
-<connect gate="J1" pin="SPI_MISO/SDIO_DATA0" pad="64"/>
-<connect gate="J1" pin="SPI_MISO1" pad="61"/>
-<connect gate="J1" pin="SPI_MOSI/SDIO_CMD" pad="62"/>
-<connect gate="J1" pin="SPI_MOSI1" pad="59"/>
 <connect gate="J1" pin="SPI_SCK/SDIO_CLK" pad="60"/>
 <connect gate="J1" pin="SPI_SCK1" pad="57"/>
+<connect gate="J1" pin="SPI_SDI/SDIO_DATA0" pad="64"/>
+<connect gate="J1" pin="SPI_SDI1" pad="61"/>
+<connect gate="J1" pin="SPI_SDO/SDIO_CMD" pad="62"/>
+<connect gate="J1" pin="SPI_SDO1" pad="59"/>
 <connect gate="J1" pin="SWDCK" pad="21"/>
 <connect gate="J1" pin="SWDIO" pad="23"/>
 <connect gate="J1" pin="TX1" pad="17"/>
@@ -19719,12 +19719,12 @@ Out</text>
 <connect gate="J1" pin="SDIO_DATA2" pad="68"/>
 <connect gate="J1" pin="SPI_!CS!/SDIO_DATA3" pad="70"/>
 <connect gate="J1" pin="SPI_!CS!1" pad="55"/>
-<connect gate="J1" pin="SPI_MISO/SDIO_DATA0" pad="64"/>
-<connect gate="J1" pin="SPI_MISO1" pad="61"/>
-<connect gate="J1" pin="SPI_MOSI/SDIO_CMD" pad="62"/>
-<connect gate="J1" pin="SPI_MOSI1" pad="59"/>
 <connect gate="J1" pin="SPI_SCK/SDIO_CLK" pad="60"/>
 <connect gate="J1" pin="SPI_SCK1" pad="57"/>
+<connect gate="J1" pin="SPI_SDI/SDIO_DATA0" pad="64"/>
+<connect gate="J1" pin="SPI_SDI1" pad="61"/>
+<connect gate="J1" pin="SPI_SDO/SDIO_CMD" pad="62"/>
+<connect gate="J1" pin="SPI_SDO1" pad="59"/>
 <connect gate="J1" pin="SWDCK" pad="21"/>
 <connect gate="J1" pin="SWDIO" pad="23"/>
 <connect gate="J1" pin="TX1" pad="17"/>
@@ -19889,7 +19889,7 @@ Out</text>
 <sheets>
 <sheet>
 <plain>
-<text x="421.64" y="7.62" size="2.54" layer="94">v12</text>
+<text x="421.64" y="7.62" size="2.54" layer="94">v13</text>
 <text x="348.234" y="11.176" size="2.54" layer="94">N. Seidle</text>
 <text x="274.574" y="266.446" size="2.54" layer="94" font="vector" align="center">MicroMod Connector</text>
 <text x="139.7" y="210.82" size="2.54" layer="94" font="vector" align="center">Teensy 4.x</text>
@@ -20448,7 +20448,7 @@ battery or external power</text>
 <segment>
 <wire x1="297.18" y1="231.14" x2="299.72" y2="231.14" width="0.1524" layer="91"/>
 <label x="299.72" y="231.14" size="1.27" layer="95" rot="MR180" xref="yes"/>
-<pinref part="J1" gate="J1" pin="SPI_MISO1"/>
+<pinref part="J1" gate="J1" pin="SPI_SDI1"/>
 </segment>
 </net>
 <net name="MOSI/11" class="0">
@@ -20460,7 +20460,7 @@ battery or external power</text>
 <segment>
 <wire x1="297.18" y1="233.68" x2="299.72" y2="233.68" width="0.1524" layer="91"/>
 <label x="299.72" y="233.68" size="1.27" layer="95" rot="MR180" xref="yes"/>
-<pinref part="J1" gate="J1" pin="SPI_MOSI1"/>
+<pinref part="J1" gate="J1" pin="SPI_SDO1"/>
 </segment>
 </net>
 <net name="GPIO/9" class="0">
@@ -20688,7 +20688,7 @@ battery or external power</text>
 <segment>
 <wire x1="297.18" y1="248.92" x2="299.72" y2="248.92" width="0.1524" layer="91"/>
 <label x="299.72" y="248.92" size="1.27" layer="95" xref="yes"/>
-<pinref part="J1" gate="J1" pin="SPI_MISO/SDIO_DATA0"/>
+<pinref part="J1" gate="J1" pin="SPI_SDI/SDIO_DATA0"/>
 </segment>
 </net>
 <net name="36/CLK" class="2">
@@ -20712,7 +20712,7 @@ battery or external power</text>
 <segment>
 <wire x1="297.18" y1="251.46" x2="299.72" y2="251.46" width="0.1524" layer="91"/>
 <label x="299.72" y="251.46" size="1.27" layer="95" xref="yes"/>
-<pinref part="J1" gate="J1" pin="SPI_MOSI/SDIO_CMD"/>
+<pinref part="J1" gate="J1" pin="SPI_SDO/SDIO_CMD"/>
 </segment>
 </net>
 <net name="39/DAT3" class="0">
