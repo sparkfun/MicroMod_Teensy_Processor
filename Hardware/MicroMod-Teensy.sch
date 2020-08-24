@@ -19761,6 +19761,8 @@ Out</text>
 </class>
 <class number="3" name="DCBoost" width="0.381" drill="0">
 </class>
+<class number="4" name="3.3V Controlled" width="0.1524" drill="0">
+</class>
 </classes>
 <parts>
 <part name="FRAME1" library="SparkFun-Aesthetics" deviceset="FRAME-LEDGER" device=""/>
@@ -21564,7 +21566,7 @@ battery or external power</text>
 <pinref part="R2" gate="G$1" pin="2"/>
 </segment>
 </net>
-<net name="3.3V_CONTROLLED" class="0">
+<net name="3.3V_CONTROLLED" class="4">
 <segment>
 <pinref part="U1" gate="U1" pin="DCDC_IN_Q"/>
 <wire x1="116.84" y1="167.64" x2="114.3" y2="167.64" width="0.1524" layer="91"/>
