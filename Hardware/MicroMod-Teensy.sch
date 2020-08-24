@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.6.0">
+<eagle version="9.6.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="yes"/>
@@ -20727,7 +20727,7 @@ battery or external power</text>
 <label x="165.1" y="91.44" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
-<net name="N$31" class="0">
+<net name="32KHZ_2" class="0">
 <segment>
 <pinref part="U1" gate="U1" pin="RTC_XTALO"/>
 <pinref part="Y1" gate="G$1" pin="2"/>
@@ -20738,7 +20738,7 @@ battery or external power</text>
 <wire x1="180.34" y1="53.34" x2="180.34" y2="45.72" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$32" class="0">
+<net name="32KHZ_1" class="0">
 <segment>
 <pinref part="U1" gate="U1" pin="RTC_XTALI"/>
 <pinref part="Y1" gate="G$1" pin="1"/>
@@ -21007,7 +21007,7 @@ battery or external power</text>
 <pinref part="J1" gate="J1" pin="USB_D+"/>
 </segment>
 </net>
-<net name="N$4" class="0">
+<net name="24MHZ_1" class="0">
 <segment>
 <pinref part="U1" gate="U1" pin="XTALO"/>
 <pinref part="Y2" gate="G$1" pin="2"/>
@@ -21018,7 +21018,7 @@ battery or external power</text>
 <junction x="167.64" y="60.96"/>
 </segment>
 </net>
-<net name="N$5" class="0">
+<net name="24MHZ_2" class="0">
 <segment>
 <pinref part="U1" gate="U1" pin="XTALI"/>
 <pinref part="Y2" gate="G$1" pin="1"/>
