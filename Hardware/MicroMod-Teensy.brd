@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.6.0">
+<eagle version="9.5.0">
 <drawing>
 <settings>
-<setting alwaysvectorfont="yes"/>
+<setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="mm" altunit="mm"/>
 <layers>
-<layer number="1" name="Top" color="4" fill="1" visible="no" active="yes"/>
+<layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Vert-GND" color="1" fill="3" visible="no" active="yes"/>
 <layer number="15" name="Horz-3V3" color="4" fill="6" visible="no" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -16,9 +16,9 @@
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="20" name="Dimension" color="24" fill="1" visible="yes" active="yes"/>
-<layer number="21" name="tPlace" color="16" fill="1" visible="no" active="yes"/>
-<layer number="22" name="bPlace" color="14" fill="1" visible="no" active="yes"/>
-<layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="yes"/>
+<layer number="21" name="tPlace" color="16" fill="1" visible="yes" active="yes"/>
+<layer number="22" name="bPlace" color="14" fill="1" visible="yes" active="yes"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="25" name="tNames" color="7" fill="1" visible="no" active="yes"/>
 <layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
@@ -40,13 +40,13 @@
 <layer number="42" name="bRestrict" color="1" fill="10" visible="no" active="yes"/>
 <layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="yes"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
-<layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
+<layer number="45" name="Holes" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
 <layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
 <layer number="48" name="Document" color="7" fill="1" visible="no" active="yes"/>
-<layer number="49" name="Reference" color="7" fill="1" visible="no" active="yes"/>
+<layer number="49" name="Reference" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="yes"/>
-<layer number="51" name="tDocu" color="6" fill="1" visible="no" active="yes"/>
+<layer number="51" name="tDocu" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="52" name="bDocu" color="7" fill="1" visible="no" active="yes"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="no" active="no"/>
 <layer number="92" name="Busses" color="1" fill="1" visible="no" active="no"/>
@@ -3874,14 +3874,14 @@ Out</text>
 <attribute name="VALUE" x="8" y="20.355" size="0.6096" layer="27" font="vector" ratio="20" align="top-center"/>
 </element>
 <element name="TP8" library="SparkFun-Connectors" package="PAD.03X.03" value="" x="2" y="16.59" smashed="yes" rot="MR0"/>
-<element name="TP9" library="SparkFun-Connectors" package="PAD.03X.03" value="" x="1.7" y="19.64" smashed="yes" rot="MR0"/>
+<element name="TP9" library="SparkFun-Connectors" package="PAD.03X.03" value="" x="3.736" y="19.487" smashed="yes" rot="MR0"/>
 <element name="C28" library="SparkFun-Capacitors" package="0402-TIGHT" value="0.22uF" x="1" y="19.99" smashed="yes" rot="R90">
 <attribute name="NAME" x="0.438" y="19.99" size="0.6096" layer="25" font="vector" ratio="20" rot="R90" align="bottom-center"/>
 <attribute name="PROD_ID" value="CAP-14846" x="1" y="19.99" size="1.778" layer="27" font="vector" ratio="15" rot="R90" display="off"/>
 <attribute name="VALUE" x="1.562" y="19.99" size="0.6096" layer="27" font="vector" ratio="20" rot="R90" align="top-center"/>
 </element>
 <element name="TP10" library="SparkFun-Connectors" package="PAD.03X.03" value="" x="7.3" y="10.99" smashed="yes" rot="MR270"/>
-<element name="TP11" library="SparkFun-Connectors" package="PAD.03X.03" value="" x="9" y="20.04" smashed="yes" rot="MR270"/>
+<element name="TP11" library="SparkFun-Connectors" package="PAD.03X.03" value="" x="7.137" y="20.122" smashed="yes" rot="MR270"/>
 <element name="U$3" library="buzzard_labels (1)" package="TEENSY2" value="" x="13.858" y="17.516" smashed="yes"/>
 <element name="L2" library="SparkFun-Coils" package="1008(2520)" value="4.7μH" x="16.25" y="7.35" smashed="yes" rot="R90">
 <attribute name="NAME" x="14.98" y="6.48" size="0.381" layer="25" rot="R90"/>
@@ -3926,7 +3926,7 @@ Out</text>
 <element name="U$7" library="SparkFun-MicroMod" package="MICROMOD_LOGO_.3" value="" x="10.795" y="17.526" smashed="yes"/>
 <element name="U$11" library="SparkFun-MicroMod" package="MICROMOD_LOGO_.3" value="" x="16.383" y="17.272" smashed="yes" rot="MR0"/>
 <element name="TP12" library="SparkFun-Connectors" package="PAD.03X.03" value="" x="1.44" y="21.28" smashed="yes" rot="MR0"/>
-<element name="TP13" library="SparkFun-Connectors" package="PAD.03X.03" value="" x="10" y="21" smashed="yes" rot="MR0"/>
+<element name="TP13" library="SparkFun-Connectors" package="PAD.03X.03" value="" x="10.756" y="21.135" smashed="yes" rot="MR0"/>
 </elements>
 <signals>
 <signal name="BATT_VIN/22/A8">
@@ -4998,8 +4998,8 @@ Out</text>
 <contactref element="TP13" pad="P$1"/>
 <wire x1="10.7605125" y1="17.76395625" x2="10.65965625" y2="17.6631" width="0.2032" layer="16"/>
 <wire x1="10.63535" y1="17.6631" x2="10.65965625" y2="17.6631" width="0.2032" layer="16"/>
-<wire x1="10.7605125" y1="20.2394875" x2="10" y2="21" width="0.2032" layer="16"/>
-<wire x1="10.7605125" y1="17.76395625" x2="10.7605125" y2="20.2394875" width="0.2032" layer="16"/>
+<wire x1="10.7605125" y1="21.1304875" x2="10.756" y2="21.135" width="0.2032" layer="16"/>
+<wire x1="10.7605125" y1="17.76395625" x2="10.7605125" y2="21.1304875" width="0.2032" layer="16"/>
 </signal>
 <signal name="USB_D+" class="1">
 <contactref element="U1" pad="L8"/>
@@ -5380,8 +5380,8 @@ Out</text>
 <wire x1="9.2714" y1="17.0538875" x2="9.2714" y2="18.09235" width="0.1016" layer="2"/>
 <wire x1="9.2714" y1="18.09235" x2="9.35" y2="18.17095" width="0.1016" layer="2"/>
 <wire x1="9.35" y1="18.17095" x2="9.35" y2="19.57095" width="0.1016" layer="16"/>
-<wire x1="9.35" y1="19.57095" x2="9" y2="19.92095" width="0.1016" layer="16"/>
-<wire x1="9" y1="20.04" x2="9" y2="19.92095" width="0.1016" layer="16"/>
+<wire x1="9.35" y1="19.57095" x2="8.79895" y2="20.122" width="0.1016" layer="16"/>
+<wire x1="7.137" y1="20.122" x2="8.79895" y2="20.122" width="0.1016" layer="16"/>
 </signal>
 <signal name="VDD_SNVS_IN">
 <contactref element="U1" pad="M9"/>
@@ -5840,9 +5840,9 @@ Out</text>
 <contactref element="TP9" pad="P$1"/>
 <wire x1="2.5" y1="19.24" x2="1.823" y2="19.24" width="0.1016" layer="1"/>
 <via x="2.7" y="20.34" extent="1-16" drill="0.2"/>
-<wire x1="2.7" y1="20.032" x2="2.308" y2="19.64" width="0.1016" layer="16"/>
-<wire x1="1.7" y1="19.64" x2="2.308" y2="19.64" width="0.1016" layer="16"/>
-<wire x1="2.7" y1="20.34" x2="2.7" y2="20.032" width="0.1016" layer="16"/>
+<wire x1="3.736" y1="19.487" x2="3.561" y2="19.487" width="0.1016" layer="16"/>
+<wire x1="3.561" y1="19.487" x2="2.7" y2="20.348" width="0.1016" layer="16"/>
+<wire x1="2.7" y1="20.348" x2="2.7" y2="20.34" width="0.1016" layer="16"/>
 <via x="14.605" y="3.7913" extent="1-16" drill="0.2"/>
 <via x="11.176" y="19.31865" extent="1-16" drill="0.2"/>
 <wire x1="14.605" y1="3.7877125" x2="14.605" y2="3.7913" width="0.1016" layer="1"/>
