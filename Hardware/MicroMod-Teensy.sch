@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.5.0">
+<eagle version="9.5.2">
 <drawing>
 <settings>
-<setting alwaysvectorfont="no"/>
+<setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
@@ -21391,11 +21391,6 @@ battery or external power</text>
 <label x="370.84" y="226.06" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<wire x1="251.46" y1="208.28" x2="248.92" y2="208.28" width="0.1524" layer="91"/>
-<label x="248.92" y="208.28" size="1.27" layer="95" rot="R180" xref="yes"/>
-<pinref part="J1" gate="J1" pin="SWDCK"/>
-</segment>
-<segment>
 <pinref part="TP9" gate="G$1" pin="1"/>
 <wire x1="406.4" y1="106.68" x2="408.94" y2="106.68" width="0.1524" layer="91" style="longdash"/>
 <label x="408.94" y="106.68" size="1.27" layer="95" xref="yes"/>
@@ -21406,11 +21401,6 @@ battery or external power</text>
 <pinref part="U3" gate="U1" pin="PTA2"/>
 <wire x1="373.38" y1="223.52" x2="370.84" y2="223.52" width="0.1524" layer="91"/>
 <label x="370.84" y="223.52" size="1.27" layer="95" rot="R180" xref="yes"/>
-</segment>
-<segment>
-<wire x1="251.46" y1="210.82" x2="248.92" y2="210.82" width="0.1524" layer="91"/>
-<label x="248.92" y="210.82" size="1.27" layer="95" rot="R180" xref="yes"/>
-<pinref part="J1" gate="J1" pin="SWDIO"/>
 </segment>
 <segment>
 <pinref part="TP8" gate="G$1" pin="1"/>
