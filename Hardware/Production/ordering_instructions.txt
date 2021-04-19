@@ -10,3 +10,4 @@ pcs per panel, 16
 min trace width, 0.1016mm / 0.0040in
 min drill size, 0.2000mm / 0.0079in
 filename to layer stackup 1/2/3/4: GTL, GL2, GL3, GBL
+PCB requires 45 degree chamfer or bevel on edge
