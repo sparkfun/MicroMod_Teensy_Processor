@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.6.0">
+<eagle version="9.6.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="yes"/>
@@ -108,15 +108,40 @@
 <layer number="127" name="_tValues" color="7" fill="1" visible="no" active="no"/>
 <layer number="128" name="_bValues" color="7" fill="1" visible="no" active="no"/>
 <layer number="129" name="Mask" color="7" fill="1" visible="no" active="no"/>
+<layer number="130" name="SMDSTROOK" color="7" fill="1" visible="no" active="no"/>
 <layer number="131" name="tAdjust" color="7" fill="1" visible="no" active="no"/>
 <layer number="132" name="bAdjust" color="7" fill="1" visible="no" active="no"/>
+<layer number="133" name="bottom_silk" color="7" fill="1" visible="no" active="no"/>
+<layer number="134" name="silk_top" color="7" fill="1" visible="no" active="no"/>
+<layer number="135" name="silk_bottom" color="7" fill="1" visible="no" active="no"/>
+<layer number="136" name="silktop" color="7" fill="1" visible="no" active="no"/>
+<layer number="137" name="silkbottom" color="7" fill="1" visible="no" active="no"/>
+<layer number="138" name="EEE" color="7" fill="1" visible="no" active="no"/>
+<layer number="139" name="_tKeepout" color="7" fill="1" visible="no" active="no"/>
+<layer number="140" name="mbKeepout" color="7" fill="1" visible="no" active="no"/>
+<layer number="141" name="ASSEMBLY_TOP" color="7" fill="1" visible="no" active="no"/>
+<layer number="142" name="mbRestrict" color="7" fill="1" visible="no" active="no"/>
+<layer number="143" name="PLACE_BOUND_TOP" color="7" fill="1" visible="no" active="no"/>
 <layer number="144" name="Drill_legend" color="7" fill="1" visible="no" active="no"/>
+<layer number="145" name="DrillLegend_01-16" color="7" fill="1" visible="no" active="no"/>
+<layer number="146" name="DrillLegend_01-20" color="7" fill="1" visible="no" active="no"/>
+<layer number="147" name="PIN_NUMBER" color="7" fill="1" visible="no" active="no"/>
+<layer number="148" name="DrillLegend_01-20" color="7" fill="1" visible="no" active="no"/>
+<layer number="149" name="DrillLegend_02-15" color="7" fill="1" visible="no" active="no"/>
 <layer number="150" name="Notes" color="7" fill="1" visible="no" active="no"/>
 <layer number="151" name="HeatSink" color="7" fill="1" visible="no" active="no"/>
 <layer number="152" name="_bDocu" color="7" fill="1" visible="no" active="no"/>
 <layer number="153" name="FabDoc1" color="7" fill="1" visible="no" active="no"/>
 <layer number="154" name="FabDoc2" color="7" fill="1" visible="no" active="no"/>
 <layer number="155" name="FabDoc3" color="7" fill="1" visible="no" active="no"/>
+<layer number="166" name="AntennaArea" color="7" fill="1" visible="no" active="no"/>
+<layer number="168" name="4mmHeightArea" color="7" fill="1" visible="no" active="no"/>
+<layer number="191" name="mNets" color="7" fill="1" visible="no" active="no"/>
+<layer number="192" name="mBusses" color="7" fill="1" visible="no" active="no"/>
+<layer number="193" name="mPins" color="7" fill="1" visible="no" active="no"/>
+<layer number="194" name="mSymbols" color="7" fill="1" visible="no" active="no"/>
+<layer number="195" name="mNames" color="7" fill="1" visible="no" active="no"/>
+<layer number="196" name="mValues" color="7" fill="1" visible="no" active="no"/>
 <layer number="199" name="Contour" color="7" fill="1" visible="no" active="no"/>
 <layer number="200" name="200bmp" color="1" fill="10" visible="no" active="no"/>
 <layer number="201" name="201bmp" color="2" fill="10" visible="no" active="no"/>
@@ -696,16 +721,6 @@ We've spent an enormous amount of time creating and checking these footprints an
 &lt;br&gt;
 You are welcome to use this library for commercial purposes. For attribution, we ask that when you begin to sell your device using our footprint, you email us with a link to the product being sold. We want bragging rights that we helped (in a very small part) to create your 8th world wonder. We would like the opportunity to feature your device on our homepage.</description>
 <packages>
-<package name="CREATIVE_COMMONS">
-<description>&lt;h3&gt;Creative Commons License Template&lt;/h3&gt;
-&lt;p&gt;CC BY-SA 4.0 License with &lt;a href="https://creativecommons.org/licenses/by-sa/4.0/"&gt;link to license&lt;/a&gt; and placeholder for designer name.&lt;/p&gt;
-&lt;p&gt;Devices using:
-&lt;ul&gt;&lt;li&gt;FRAME_LEDGER&lt;/li&gt;
-&lt;li&gt;FRAME_LETTER&lt;/li&gt;&lt;/ul&gt;&lt;/p&gt;</description>
-<text x="-20.32" y="5.08" size="1.778" layer="51" font="vector">Released under the Creative Commons Attribution Share-Alike 4.0 License</text>
-<text x="0" y="2.54" size="1.778" layer="51" font="vector"> https://creativecommons.org/licenses/by-sa/4.0/</text>
-<text x="11.43" y="0" size="1.778" layer="51" font="vector">Designed by:</text>
-</package>
 <package name="FIDUCIAL-MICRO">
 <description>&lt;h3&gt;Fiducial - Circle, 0.25in&lt;/h3&gt;
 &lt;p&gt;Point-of-reference for pick-and-place machines and other optical instruments.&lt;/p&gt;
@@ -1307,14 +1322,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <vertex x="2.441" y="3.126"/>
 <vertex x="2.361" y="3.216"/>
 </polygon>
-</package>
-<package name="DUMMY">
-<description>&lt;h3&gt;Dummy Footprint&lt;/h3&gt;
-&lt;p&gt;NOTHING HERE!!! For when you want a symbol with no package as an option against symbols with a package.&lt;/p&gt;
-
-&lt;p&gt;Devices using:
-&lt;ul&gt;&lt;li&gt;BADGERHACK_LOGO&lt;/li&gt;
-&lt;li&gt;FRAME-LETTER&lt;/li&gt;&lt;/ul&gt;&lt;/p&gt;</description>
 </package>
 <package name="SFE_LOGO_FLAME_.1">
 <description>&lt;h3&gt;SparkFun Flame Logo - 0.1" Height - Silkscreen&lt;/h3&gt;
@@ -4146,10 +4153,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </pass>
 </autorouter>
 <elements>
-<element name="FRAME1" library="SparkFun-Aesthetics" package="CREATIVE_COMMONS" value="FRAME-LEDGER" x="8.85" y="-21.579840625" smashed="yes">
-<attribute name="DESIGNER" value="" x="8.85" y="-21.579840625" size="1.778" layer="27" font="vector" ratio="15" display="off"/>
-<attribute name="REV" value="" x="8.85" y="-21.579840625" size="1.778" layer="27" font="vector" ratio="15" display="off"/>
-</element>
 <element name="U1" library="Teensy" package="IMXRT1062" value="IMXRT1062DV10X10" x="8" y="11.000159375" smashed="yes" rot="R90">
 <attribute name="PROD_ID" value="IC-14904" x="8" y="11.000159375" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
@@ -4404,7 +4407,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <attribute name="PROD_ID" value="RES-13495" x="2.54" y="11.430159375" size="1.778" layer="28" font="vector" ratio="15" rot="MR180" display="off"/>
 <attribute name="VALUE" x="2.54" y="11.992159375" size="0.6096" layer="28" font="vector" ratio="20" rot="MR180" align="top-center"/>
 </element>
-<element name="LOGO2" library="SparkFun-Aesthetics" package="DUMMY" value="OSHW-LOGONO_SILK" x="12.25" y="-21.579840625" smashed="yes"/>
 <element name="U4" library="SparkFun-MicroMod" package="WSON-8-6X5-SKINNY_CENTERPAD" value="W25QXX128MBIT-6X5" x="17.51" y="7.630159375" smashed="yes" rot="MR180">
 <attribute name="NAME" x="17.51" y="4.455159375" size="0.762" layer="26" rot="MR180" align="center"/>
 <attribute name="PROD_ID" value="IC-15107" x="17.51" y="7.630159375" size="1.778" layer="28" font="vector" ratio="15" rot="MR180" display="off"/>
@@ -4425,10 +4427,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <element name="U$11" library="SparkFun-MicroMod" package="MICROMOD_LOGO_.3" value="" x="16.383" y="17.282159375" smashed="yes" rot="MR0"/>
 <element name="TP12" library="SparkFun-Connectors" package="PAD.03X.03" value="" x="1.44" y="21.290159375" smashed="yes" rot="MR0"/>
 <element name="TP13" library="SparkFun-Connectors" package="PAD.03X.03" value="" x="10.756" y="21.145159375" smashed="yes" rot="MR0"/>
-<element name="FRAME2" library="SparkFun-Aesthetics" package="CREATIVE_COMMONS" value="FRAME-LEDGER" x="30.848940625" y="-21.579840625" smashed="yes">
-<attribute name="DESIGNER" value="" x="30.848940625" y="-21.579840625" size="1.778" layer="27" font="vector" ratio="15" display="off"/>
-<attribute name="REV" value="" x="30.848940625" y="-21.579840625" size="1.778" layer="27" font="vector" ratio="15" display="off"/>
-</element>
 <element name="U2" library="Teensy" package="IMXRT1062" value="IMXRT1062DV10X10" x="29.998940625" y="11.000159375" smashed="yes" rot="R90">
 <attribute name="PROD_ID" value="IC-14904" x="29.998940625" y="11.000159375" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
@@ -4635,7 +4633,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <element name="FD6" library="SparkFun-Aesthetics" package="FIDUCIAL-MICRO" value="FIDUCIALUFIDUCIAL" x="24.298940625" y="21.300159375" smashed="yes"/>
 <element name="FD7" library="SparkFun-Aesthetics" package="FIDUCIAL-MICRO" value="FIDUCIALUFIDUCIAL" x="22.998940625" y="5.000159375" smashed="yes" rot="MR0"/>
 <element name="FD8" library="SparkFun-Aesthetics" package="FIDUCIAL-MICRO" value="FIDUCIALUFIDUCIAL" x="42.998940625" y="21.000159375" smashed="yes" rot="MR0"/>
-<element name="LOGO3" library="SparkFun-Aesthetics" package="SFE_LOGO_NAME_FLAME_.1" value="SFE_LOGO_NAME_FLAME.1_INCH" x="28.698940625" y="18.100159375" smashed="yes" rot="MR0"/>
+<element name="LOGO2" library="SparkFun-Aesthetics" package="SFE_LOGO_NAME_FLAME_.1" value="SFE_LOGO_NAME_FLAME.1_INCH" x="28.698940625" y="18.100159375" smashed="yes" rot="MR0"/>
 <element name="U5" library="Teensy" package="QFN-16" value="MKL02Z32VFG4" x="25.998940625" y="19.000159375" smashed="yes" rot="R90">
 <attribute name="NAME" x="23.748940625" y="17.200159375" size="0.6096" layer="25" font="vector" ratio="20" rot="R90"/>
 <attribute name="PROD_ID" value="IC-14906" x="25.998940625" y="19.000159375" size="1.778" layer="27" rot="R90" display="off"/>
@@ -4683,7 +4681,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <attribute name="PROD_ID" value="RES-13495" x="24.538940625" y="11.430159375" size="1.778" layer="28" font="vector" ratio="15" rot="MR180" display="off"/>
 <attribute name="VALUE" x="24.538940625" y="11.992159375" size="0.6096" layer="28" font="vector" ratio="20" rot="MR180" align="top-center"/>
 </element>
-<element name="LOGO4" library="SparkFun-Aesthetics" package="DUMMY" value="OSHW-LOGONO_SILK" x="34.248940625" y="-21.579840625" smashed="yes"/>
 <element name="U6" library="SparkFun-MicroMod" package="WSON-8-6X5-SKINNY_CENTERPAD" value="W25QXX128MBIT-6X5" x="39.508940625" y="7.630159375" smashed="yes" rot="MR180">
 <attribute name="NAME" x="39.508940625" y="4.455159375" size="0.762" layer="26" rot="MR180" align="center"/>
 <attribute name="PROD_ID" value="IC-15107" x="39.508940625" y="7.630159375" size="1.778" layer="28" font="vector" ratio="15" rot="MR180" display="off"/>
@@ -4704,10 +4701,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <element name="U$18" library="SparkFun-MicroMod" package="MICROMOD_LOGO_.3" value="" x="38.381940625" y="17.282159375" smashed="yes" rot="MR0"/>
 <element name="TP25" library="SparkFun-Connectors" package="PAD.03X.03" value="" x="23.438940625" y="21.290159375" smashed="yes" rot="MR0"/>
 <element name="TP26" library="SparkFun-Connectors" package="PAD.03X.03" value="" x="32.754940625" y="21.145159375" smashed="yes" rot="MR0"/>
-<element name="FRAME3" library="SparkFun-Aesthetics" package="CREATIVE_COMMONS" value="FRAME-LEDGER" x="52.85041875" y="-21.579840625" smashed="yes">
-<attribute name="DESIGNER" value="" x="52.85041875" y="-21.579840625" size="1.778" layer="27" font="vector" ratio="15" display="off"/>
-<attribute name="REV" value="" x="52.85041875" y="-21.579840625" size="1.778" layer="27" font="vector" ratio="15" display="off"/>
-</element>
 <element name="U7" library="Teensy" package="IMXRT1062" value="IMXRT1062DV10X10" x="52.00041875" y="11.000159375" smashed="yes" rot="R90">
 <attribute name="PROD_ID" value="IC-14904" x="52.00041875" y="11.000159375" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
@@ -4914,7 +4907,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <element name="FD10" library="SparkFun-Aesthetics" package="FIDUCIAL-MICRO" value="FIDUCIALUFIDUCIAL" x="46.30041875" y="21.300159375" smashed="yes"/>
 <element name="FD11" library="SparkFun-Aesthetics" package="FIDUCIAL-MICRO" value="FIDUCIALUFIDUCIAL" x="45.00041875" y="5.000159375" smashed="yes" rot="MR0"/>
 <element name="FD12" library="SparkFun-Aesthetics" package="FIDUCIAL-MICRO" value="FIDUCIALUFIDUCIAL" x="65.00041875" y="21.000159375" smashed="yes" rot="MR0"/>
-<element name="LOGO5" library="SparkFun-Aesthetics" package="SFE_LOGO_NAME_FLAME_.1" value="SFE_LOGO_NAME_FLAME.1_INCH" x="50.70041875" y="18.100159375" smashed="yes" rot="MR0"/>
+<element name="LOGO3" library="SparkFun-Aesthetics" package="SFE_LOGO_NAME_FLAME_.1" value="SFE_LOGO_NAME_FLAME.1_INCH" x="50.70041875" y="18.100159375" smashed="yes" rot="MR0"/>
 <element name="U8" library="Teensy" package="QFN-16" value="MKL02Z32VFG4" x="48.00041875" y="19.000159375" smashed="yes" rot="R90">
 <attribute name="NAME" x="45.75041875" y="17.200159375" size="0.6096" layer="25" font="vector" ratio="20" rot="R90"/>
 <attribute name="PROD_ID" value="IC-14906" x="48.00041875" y="19.000159375" size="1.778" layer="27" rot="R90" display="off"/>
@@ -4962,7 +4955,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <attribute name="PROD_ID" value="RES-13495" x="46.54041875" y="11.430159375" size="1.778" layer="28" font="vector" ratio="15" rot="MR180" display="off"/>
 <attribute name="VALUE" x="46.54041875" y="11.992159375" size="0.6096" layer="28" font="vector" ratio="20" rot="MR180" align="top-center"/>
 </element>
-<element name="LOGO6" library="SparkFun-Aesthetics" package="DUMMY" value="OSHW-LOGONO_SILK" x="56.25041875" y="-21.579840625" smashed="yes"/>
 <element name="U9" library="SparkFun-MicroMod" package="WSON-8-6X5-SKINNY_CENTERPAD" value="W25QXX128MBIT-6X5" x="61.51041875" y="7.630159375" smashed="yes" rot="MR180">
 <attribute name="NAME" x="61.51041875" y="4.455159375" size="0.762" layer="26" rot="MR180" align="center"/>
 <attribute name="PROD_ID" value="IC-15107" x="61.51041875" y="7.630159375" size="1.778" layer="28" font="vector" ratio="15" rot="MR180" display="off"/>
@@ -4983,10 +4975,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <element name="U$27" library="SparkFun-MicroMod" package="MICROMOD_LOGO_.3" value="" x="60.38341875" y="17.282159375" smashed="yes" rot="MR0"/>
 <element name="TP38" library="SparkFun-Connectors" package="PAD.03X.03" value="" x="45.44041875" y="21.290159375" smashed="yes" rot="MR0"/>
 <element name="TP39" library="SparkFun-Connectors" package="PAD.03X.03" value="" x="54.75641875" y="21.145159375" smashed="yes" rot="MR0"/>
-<element name="FRAME4" library="SparkFun-Aesthetics" package="CREATIVE_COMMONS" value="FRAME-LEDGER" x="74.849359375" y="-21.579840625" smashed="yes">
-<attribute name="DESIGNER" value="" x="74.849359375" y="-21.579840625" size="1.778" layer="27" font="vector" ratio="15" display="off"/>
-<attribute name="REV" value="" x="74.849359375" y="-21.579840625" size="1.778" layer="27" font="vector" ratio="15" display="off"/>
-</element>
 <element name="U10" library="Teensy" package="IMXRT1062" value="IMXRT1062DV10X10" x="73.999359375" y="11.000159375" smashed="yes" rot="R90">
 <attribute name="PROD_ID" value="IC-14904" x="73.999359375" y="11.000159375" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
@@ -5193,7 +5181,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <element name="FD14" library="SparkFun-Aesthetics" package="FIDUCIAL-MICRO" value="FIDUCIALUFIDUCIAL" x="68.299359375" y="21.300159375" smashed="yes"/>
 <element name="FD15" library="SparkFun-Aesthetics" package="FIDUCIAL-MICRO" value="FIDUCIALUFIDUCIAL" x="66.999359375" y="5.000159375" smashed="yes" rot="MR0"/>
 <element name="FD16" library="SparkFun-Aesthetics" package="FIDUCIAL-MICRO" value="FIDUCIALUFIDUCIAL" x="86.999359375" y="21.000159375" smashed="yes" rot="MR0"/>
-<element name="LOGO7" library="SparkFun-Aesthetics" package="SFE_LOGO_NAME_FLAME_.1" value="SFE_LOGO_NAME_FLAME.1_INCH" x="72.699359375" y="18.100159375" smashed="yes" rot="MR0"/>
+<element name="LOGO4" library="SparkFun-Aesthetics" package="SFE_LOGO_NAME_FLAME_.1" value="SFE_LOGO_NAME_FLAME.1_INCH" x="72.699359375" y="18.100159375" smashed="yes" rot="MR0"/>
 <element name="U11" library="Teensy" package="QFN-16" value="MKL02Z32VFG4" x="69.999359375" y="19.000159375" smashed="yes" rot="R90">
 <attribute name="NAME" x="67.749359375" y="17.200159375" size="0.6096" layer="25" font="vector" ratio="20" rot="R90"/>
 <attribute name="PROD_ID" value="IC-14906" x="69.999359375" y="19.000159375" size="1.778" layer="27" rot="R90" display="off"/>
@@ -5241,7 +5229,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <attribute name="PROD_ID" value="RES-13495" x="68.539359375" y="11.430159375" size="1.778" layer="28" font="vector" ratio="15" rot="MR180" display="off"/>
 <attribute name="VALUE" x="68.539359375" y="11.992159375" size="0.6096" layer="28" font="vector" ratio="20" rot="MR180" align="top-center"/>
 </element>
-<element name="LOGO8" library="SparkFun-Aesthetics" package="DUMMY" value="OSHW-LOGONO_SILK" x="78.249359375" y="-21.579840625" smashed="yes"/>
 <element name="U12" library="SparkFun-MicroMod" package="WSON-8-6X5-SKINNY_CENTERPAD" value="W25QXX128MBIT-6X5" x="83.509359375" y="7.630159375" smashed="yes" rot="MR180">
 <attribute name="NAME" x="83.509359375" y="4.455159375" size="0.762" layer="26" rot="MR180" align="center"/>
 <attribute name="PROD_ID" value="IC-15107" x="83.509359375" y="7.630159375" size="1.778" layer="28" font="vector" ratio="15" rot="MR180" display="off"/>
@@ -5262,10 +5249,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <element name="U$36" library="SparkFun-MicroMod" package="MICROMOD_LOGO_.3" value="" x="82.382359375" y="17.282159375" smashed="yes" rot="MR0"/>
 <element name="TP51" library="SparkFun-Connectors" package="PAD.03X.03" value="" x="67.439359375" y="21.290159375" smashed="yes" rot="MR0"/>
 <element name="TP52" library="SparkFun-Connectors" package="PAD.03X.03" value="" x="76.755359375" y="21.145159375" smashed="yes" rot="MR0"/>
-<element name="FRAME5" library="SparkFun-Aesthetics" package="CREATIVE_COMMONS" value="FRAME-LEDGER" x="96.850840625" y="-21.579840625" smashed="yes">
-<attribute name="DESIGNER" value="" x="96.850840625" y="-21.579840625" size="1.778" layer="27" font="vector" ratio="15" display="off"/>
-<attribute name="REV" value="" x="96.850840625" y="-21.579840625" size="1.778" layer="27" font="vector" ratio="15" display="off"/>
-</element>
 <element name="U13" library="Teensy" package="IMXRT1062" value="IMXRT1062DV10X10" x="96.000840625" y="11.000159375" smashed="yes" rot="R90">
 <attribute name="PROD_ID" value="IC-14904" x="96.000840625" y="11.000159375" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
@@ -5472,7 +5455,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <element name="FD18" library="SparkFun-Aesthetics" package="FIDUCIAL-MICRO" value="FIDUCIALUFIDUCIAL" x="90.300840625" y="21.300159375" smashed="yes"/>
 <element name="FD19" library="SparkFun-Aesthetics" package="FIDUCIAL-MICRO" value="FIDUCIALUFIDUCIAL" x="89.000840625" y="5.000159375" smashed="yes" rot="MR0"/>
 <element name="FD20" library="SparkFun-Aesthetics" package="FIDUCIAL-MICRO" value="FIDUCIALUFIDUCIAL" x="109.000840625" y="21.000159375" smashed="yes" rot="MR0"/>
-<element name="LOGO9" library="SparkFun-Aesthetics" package="SFE_LOGO_NAME_FLAME_.1" value="SFE_LOGO_NAME_FLAME.1_INCH" x="94.700840625" y="18.100159375" smashed="yes" rot="MR0"/>
+<element name="LOGO5" library="SparkFun-Aesthetics" package="SFE_LOGO_NAME_FLAME_.1" value="SFE_LOGO_NAME_FLAME.1_INCH" x="94.700840625" y="18.100159375" smashed="yes" rot="MR0"/>
 <element name="U14" library="Teensy" package="QFN-16" value="MKL02Z32VFG4" x="92.000840625" y="19.000159375" smashed="yes" rot="R90">
 <attribute name="NAME" x="89.750840625" y="17.200159375" size="0.6096" layer="25" font="vector" ratio="20" rot="R90"/>
 <attribute name="PROD_ID" value="IC-14906" x="92.000840625" y="19.000159375" size="1.778" layer="27" rot="R90" display="off"/>
@@ -5520,7 +5503,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <attribute name="PROD_ID" value="RES-13495" x="90.540840625" y="11.430159375" size="1.778" layer="28" font="vector" ratio="15" rot="MR180" display="off"/>
 <attribute name="VALUE" x="90.540840625" y="11.992159375" size="0.6096" layer="28" font="vector" ratio="20" rot="MR180" align="top-center"/>
 </element>
-<element name="LOGO10" library="SparkFun-Aesthetics" package="DUMMY" value="OSHW-LOGONO_SILK" x="100.250840625" y="-21.579840625" smashed="yes"/>
 <element name="U15" library="SparkFun-MicroMod" package="WSON-8-6X5-SKINNY_CENTERPAD" value="W25QXX128MBIT-6X5" x="105.510840625" y="7.630159375" smashed="yes" rot="MR180">
 <attribute name="NAME" x="105.510840625" y="4.455159375" size="0.762" layer="26" rot="MR180" align="center"/>
 <attribute name="PROD_ID" value="IC-15107" x="105.510840625" y="7.630159375" size="1.778" layer="28" font="vector" ratio="15" rot="MR180" display="off"/>
@@ -5541,10 +5523,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <element name="U$45" library="SparkFun-MicroMod" package="MICROMOD_LOGO_.3" value="" x="104.383840625" y="17.282159375" smashed="yes" rot="MR0"/>
 <element name="TP64" library="SparkFun-Connectors" package="PAD.03X.03" value="" x="89.440840625" y="21.290159375" smashed="yes" rot="MR0"/>
 <element name="TP65" library="SparkFun-Connectors" package="PAD.03X.03" value="" x="98.756840625" y="21.145159375" smashed="yes" rot="MR0"/>
-<element name="FRAME6" library="SparkFun-Aesthetics" package="CREATIVE_COMMONS" value="FRAME-LEDGER" x="118.84978125" y="-21.579840625" smashed="yes">
-<attribute name="DESIGNER" value="" x="118.84978125" y="-21.579840625" size="1.778" layer="27" font="vector" ratio="15" display="off"/>
-<attribute name="REV" value="" x="118.84978125" y="-21.579840625" size="1.778" layer="27" font="vector" ratio="15" display="off"/>
-</element>
 <element name="U16" library="Teensy" package="IMXRT1062" value="IMXRT1062DV10X10" x="117.99978125" y="11.000159375" smashed="yes" rot="R90">
 <attribute name="PROD_ID" value="IC-14904" x="117.99978125" y="11.000159375" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
@@ -5751,7 +5729,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <element name="FD22" library="SparkFun-Aesthetics" package="FIDUCIAL-MICRO" value="FIDUCIALUFIDUCIAL" x="112.29978125" y="21.300159375" smashed="yes"/>
 <element name="FD23" library="SparkFun-Aesthetics" package="FIDUCIAL-MICRO" value="FIDUCIALUFIDUCIAL" x="110.99978125" y="5.000159375" smashed="yes" rot="MR0"/>
 <element name="FD24" library="SparkFun-Aesthetics" package="FIDUCIAL-MICRO" value="FIDUCIALUFIDUCIAL" x="130.99978125" y="21.000159375" smashed="yes" rot="MR0"/>
-<element name="LOGO11" library="SparkFun-Aesthetics" package="SFE_LOGO_NAME_FLAME_.1" value="SFE_LOGO_NAME_FLAME.1_INCH" x="116.69978125" y="18.100159375" smashed="yes" rot="MR0"/>
+<element name="LOGO6" library="SparkFun-Aesthetics" package="SFE_LOGO_NAME_FLAME_.1" value="SFE_LOGO_NAME_FLAME.1_INCH" x="116.69978125" y="18.100159375" smashed="yes" rot="MR0"/>
 <element name="U17" library="Teensy" package="QFN-16" value="MKL02Z32VFG4" x="113.99978125" y="19.000159375" smashed="yes" rot="R90">
 <attribute name="NAME" x="111.74978125" y="17.200159375" size="0.6096" layer="25" font="vector" ratio="20" rot="R90"/>
 <attribute name="PROD_ID" value="IC-14906" x="113.99978125" y="19.000159375" size="1.778" layer="27" rot="R90" display="off"/>
@@ -5799,7 +5777,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <attribute name="PROD_ID" value="RES-13495" x="112.53978125" y="11.430159375" size="1.778" layer="28" font="vector" ratio="15" rot="MR180" display="off"/>
 <attribute name="VALUE" x="112.53978125" y="11.992159375" size="0.6096" layer="28" font="vector" ratio="20" rot="MR180" align="top-center"/>
 </element>
-<element name="LOGO12" library="SparkFun-Aesthetics" package="DUMMY" value="OSHW-LOGONO_SILK" x="122.24978125" y="-21.579840625" smashed="yes"/>
 <element name="U18" library="SparkFun-MicroMod" package="WSON-8-6X5-SKINNY_CENTERPAD" value="W25QXX128MBIT-6X5" x="127.50978125" y="7.630159375" smashed="yes" rot="MR180">
 <attribute name="NAME" x="127.50978125" y="4.455159375" size="0.762" layer="26" rot="MR180" align="center"/>
 <attribute name="PROD_ID" value="IC-15107" x="127.50978125" y="7.630159375" size="1.778" layer="28" font="vector" ratio="15" rot="MR180" display="off"/>
@@ -5820,10 +5797,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <element name="U$54" library="SparkFun-MicroMod" package="MICROMOD_LOGO_.3" value="" x="126.38278125" y="17.282159375" smashed="yes" rot="MR0"/>
 <element name="TP77" library="SparkFun-Connectors" package="PAD.03X.03" value="" x="111.43978125" y="21.290159375" smashed="yes" rot="MR0"/>
 <element name="TP78" library="SparkFun-Connectors" package="PAD.03X.03" value="" x="120.75578125" y="21.145159375" smashed="yes" rot="MR0"/>
-<element name="FRAME7" library="SparkFun-Aesthetics" package="CREATIVE_COMMONS" value="FRAME-LEDGER" x="140.851259375" y="-21.579840625" smashed="yes">
-<attribute name="DESIGNER" value="" x="140.851259375" y="-21.579840625" size="1.778" layer="27" font="vector" ratio="15" display="off"/>
-<attribute name="REV" value="" x="140.851259375" y="-21.579840625" size="1.778" layer="27" font="vector" ratio="15" display="off"/>
-</element>
 <element name="U19" library="Teensy" package="IMXRT1062" value="IMXRT1062DV10X10" x="140.001259375" y="11.000159375" smashed="yes" rot="R90">
 <attribute name="PROD_ID" value="IC-14904" x="140.001259375" y="11.000159375" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
@@ -6030,7 +6003,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <element name="FD26" library="SparkFun-Aesthetics" package="FIDUCIAL-MICRO" value="FIDUCIALUFIDUCIAL" x="134.301259375" y="21.300159375" smashed="yes"/>
 <element name="FD27" library="SparkFun-Aesthetics" package="FIDUCIAL-MICRO" value="FIDUCIALUFIDUCIAL" x="133.001259375" y="5.000159375" smashed="yes" rot="MR0"/>
 <element name="FD28" library="SparkFun-Aesthetics" package="FIDUCIAL-MICRO" value="FIDUCIALUFIDUCIAL" x="153.001259375" y="21.000159375" smashed="yes" rot="MR0"/>
-<element name="LOGO13" library="SparkFun-Aesthetics" package="SFE_LOGO_NAME_FLAME_.1" value="SFE_LOGO_NAME_FLAME.1_INCH" x="138.701259375" y="18.100159375" smashed="yes" rot="MR0"/>
+<element name="LOGO7" library="SparkFun-Aesthetics" package="SFE_LOGO_NAME_FLAME_.1" value="SFE_LOGO_NAME_FLAME.1_INCH" x="138.701259375" y="18.100159375" smashed="yes" rot="MR0"/>
 <element name="U20" library="Teensy" package="QFN-16" value="MKL02Z32VFG4" x="136.001259375" y="19.000159375" smashed="yes" rot="R90">
 <attribute name="NAME" x="133.751259375" y="17.200159375" size="0.6096" layer="25" font="vector" ratio="20" rot="R90"/>
 <attribute name="PROD_ID" value="IC-14906" x="136.001259375" y="19.000159375" size="1.778" layer="27" rot="R90" display="off"/>
@@ -6078,7 +6051,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <attribute name="PROD_ID" value="RES-13495" x="134.541259375" y="11.430159375" size="1.778" layer="28" font="vector" ratio="15" rot="MR180" display="off"/>
 <attribute name="VALUE" x="134.541259375" y="11.992159375" size="0.6096" layer="28" font="vector" ratio="20" rot="MR180" align="top-center"/>
 </element>
-<element name="LOGO14" library="SparkFun-Aesthetics" package="DUMMY" value="OSHW-LOGONO_SILK" x="144.251259375" y="-21.579840625" smashed="yes"/>
 <element name="U21" library="SparkFun-MicroMod" package="WSON-8-6X5-SKINNY_CENTERPAD" value="W25QXX128MBIT-6X5" x="149.511259375" y="7.630159375" smashed="yes" rot="MR180">
 <attribute name="NAME" x="149.511259375" y="4.455159375" size="0.762" layer="26" rot="MR180" align="center"/>
 <attribute name="PROD_ID" value="IC-15107" x="149.511259375" y="7.630159375" size="1.778" layer="28" font="vector" ratio="15" rot="MR180" display="off"/>
@@ -6099,10 +6071,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <element name="U$63" library="SparkFun-MicroMod" package="MICROMOD_LOGO_.3" value="" x="148.384259375" y="17.282159375" smashed="yes" rot="MR0"/>
 <element name="TP90" library="SparkFun-Connectors" package="PAD.03X.03" value="" x="133.441259375" y="21.290159375" smashed="yes" rot="MR0"/>
 <element name="TP91" library="SparkFun-Connectors" package="PAD.03X.03" value="" x="142.757259375" y="21.145159375" smashed="yes" rot="MR0"/>
-<element name="FRAME8" library="SparkFun-Aesthetics" package="CREATIVE_COMMONS" value="FRAME-LEDGER" x="162.8502" y="-21.579840625" smashed="yes">
-<attribute name="DESIGNER" value="" x="162.8502" y="-21.579840625" size="1.778" layer="27" font="vector" ratio="15" display="off"/>
-<attribute name="REV" value="" x="162.8502" y="-21.579840625" size="1.778" layer="27" font="vector" ratio="15" display="off"/>
-</element>
 <element name="U22" library="Teensy" package="IMXRT1062" value="IMXRT1062DV10X10" x="162.0002" y="11.000159375" smashed="yes" rot="R90">
 <attribute name="PROD_ID" value="IC-14904" x="162.0002" y="11.000159375" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
@@ -6309,7 +6277,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <element name="FD30" library="SparkFun-Aesthetics" package="FIDUCIAL-MICRO" value="FIDUCIALUFIDUCIAL" x="156.3002" y="21.300159375" smashed="yes"/>
 <element name="FD31" library="SparkFun-Aesthetics" package="FIDUCIAL-MICRO" value="FIDUCIALUFIDUCIAL" x="155.0002" y="5.000159375" smashed="yes" rot="MR0"/>
 <element name="FD32" library="SparkFun-Aesthetics" package="FIDUCIAL-MICRO" value="FIDUCIALUFIDUCIAL" x="175.0002" y="21.000159375" smashed="yes" rot="MR0"/>
-<element name="LOGO15" library="SparkFun-Aesthetics" package="SFE_LOGO_NAME_FLAME_.1" value="SFE_LOGO_NAME_FLAME.1_INCH" x="160.7002" y="18.100159375" smashed="yes" rot="MR0"/>
+<element name="LOGO8" library="SparkFun-Aesthetics" package="SFE_LOGO_NAME_FLAME_.1" value="SFE_LOGO_NAME_FLAME.1_INCH" x="160.7002" y="18.100159375" smashed="yes" rot="MR0"/>
 <element name="U23" library="Teensy" package="QFN-16" value="MKL02Z32VFG4" x="158.0002" y="19.000159375" smashed="yes" rot="R90">
 <attribute name="NAME" x="155.7502" y="17.200159375" size="0.6096" layer="25" font="vector" ratio="20" rot="R90"/>
 <attribute name="PROD_ID" value="IC-14906" x="158.0002" y="19.000159375" size="1.778" layer="27" rot="R90" display="off"/>
@@ -6357,7 +6325,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <attribute name="PROD_ID" value="RES-13495" x="156.5402" y="11.430159375" size="1.778" layer="28" font="vector" ratio="15" rot="MR180" display="off"/>
 <attribute name="VALUE" x="156.5402" y="11.992159375" size="0.6096" layer="28" font="vector" ratio="20" rot="MR180" align="top-center"/>
 </element>
-<element name="LOGO16" library="SparkFun-Aesthetics" package="DUMMY" value="OSHW-LOGONO_SILK" x="166.2502" y="-21.579840625" smashed="yes"/>
 <element name="U24" library="SparkFun-MicroMod" package="WSON-8-6X5-SKINNY_CENTERPAD" value="W25QXX128MBIT-6X5" x="171.5102" y="7.630159375" smashed="yes" rot="MR180">
 <attribute name="NAME" x="171.5102" y="4.455159375" size="0.762" layer="26" rot="MR180" align="center"/>
 <attribute name="PROD_ID" value="IC-15107" x="171.5102" y="7.630159375" size="1.778" layer="28" font="vector" ratio="15" rot="MR180" display="off"/>
@@ -6378,10 +6345,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <element name="U$72" library="SparkFun-MicroMod" package="MICROMOD_LOGO_.3" value="" x="170.3832" y="17.282159375" smashed="yes" rot="MR0"/>
 <element name="TP103" library="SparkFun-Connectors" package="PAD.03X.03" value="" x="155.4402" y="21.290159375" smashed="yes" rot="MR0"/>
 <element name="TP104" library="SparkFun-Connectors" package="PAD.03X.03" value="" x="164.7562" y="21.145159375" smashed="yes" rot="MR0"/>
-<element name="FRAME9" library="SparkFun-Aesthetics" package="CREATIVE_COMMONS" value="FRAME-LEDGER" x="13.148940625" y="91.429840625" smashed="yes" rot="R180">
-<attribute name="DESIGNER" value="" x="13.148940625" y="91.429840625" size="1.778" layer="27" font="vector" ratio="15" rot="R180" display="off"/>
-<attribute name="REV" value="" x="13.148940625" y="91.429840625" size="1.778" layer="27" font="vector" ratio="15" rot="R180" display="off"/>
-</element>
 <element name="U25" library="Teensy" package="IMXRT1062" value="IMXRT1062DV10X10" x="13.998940625" y="58.849840625" smashed="yes" rot="R270">
 <attribute name="PROD_ID" value="IC-14904" x="13.998940625" y="58.849840625" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
@@ -6588,7 +6551,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <element name="FD34" library="SparkFun-Aesthetics" package="FIDUCIAL-MICRO" value="FIDUCIALUFIDUCIAL" x="19.698940625" y="48.549840625" smashed="yes" rot="R180"/>
 <element name="FD35" library="SparkFun-Aesthetics" package="FIDUCIAL-MICRO" value="FIDUCIALUFIDUCIAL" x="20.998940625" y="64.849840625" smashed="yes" rot="MR180"/>
 <element name="FD36" library="SparkFun-Aesthetics" package="FIDUCIAL-MICRO" value="FIDUCIALUFIDUCIAL" x="0.998940625" y="48.849840625" smashed="yes" rot="MR180"/>
-<element name="LOGO17" library="SparkFun-Aesthetics" package="SFE_LOGO_NAME_FLAME_.1" value="SFE_LOGO_NAME_FLAME.1_INCH" x="15.298940625" y="51.749840625" smashed="yes" rot="MR180"/>
+<element name="LOGO9" library="SparkFun-Aesthetics" package="SFE_LOGO_NAME_FLAME_.1" value="SFE_LOGO_NAME_FLAME.1_INCH" x="15.298940625" y="51.749840625" smashed="yes" rot="MR180"/>
 <element name="U26" library="Teensy" package="QFN-16" value="MKL02Z32VFG4" x="17.998940625" y="50.849840625" smashed="yes" rot="R270">
 <attribute name="NAME" x="20.248940625" y="52.649840625" size="0.6096" layer="25" font="vector" ratio="20" rot="R270"/>
 <attribute name="PROD_ID" value="IC-14906" x="17.998940625" y="50.849840625" size="1.778" layer="27" rot="R270" display="off"/>
@@ -6636,7 +6599,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <attribute name="PROD_ID" value="RES-13495" x="19.458940625" y="58.419840625" size="1.778" layer="28" font="vector" ratio="15" rot="MR0" display="off"/>
 <attribute name="VALUE" x="19.458940625" y="57.857840625" size="0.6096" layer="28" font="vector" ratio="20" rot="MR0" align="top-center"/>
 </element>
-<element name="LOGO18" library="SparkFun-Aesthetics" package="DUMMY" value="OSHW-LOGONO_SILK" x="9.748940625" y="91.429840625" smashed="yes" rot="R180"/>
 <element name="U27" library="SparkFun-MicroMod" package="WSON-8-6X5-SKINNY_CENTERPAD" value="W25QXX128MBIT-6X5" x="4.488940625" y="62.219840625" smashed="yes" rot="MR0">
 <attribute name="NAME" x="4.488940625" y="65.394840625" size="0.762" layer="26" rot="MR0" align="center"/>
 <attribute name="PROD_ID" value="IC-15107" x="4.488940625" y="62.219840625" size="1.778" layer="28" font="vector" ratio="15" rot="MR0" display="off"/>
@@ -6657,10 +6619,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <element name="U$81" library="SparkFun-MicroMod" package="MICROMOD_LOGO_.3" value="" x="5.615940625" y="52.567840625" smashed="yes" rot="MR180"/>
 <element name="TP116" library="SparkFun-Connectors" package="PAD.03X.03" value="" x="20.558940625" y="48.559840625" smashed="yes" rot="MR180"/>
 <element name="TP117" library="SparkFun-Connectors" package="PAD.03X.03" value="" x="11.242940625" y="48.704840625" smashed="yes" rot="MR180"/>
-<element name="FRAME10" library="SparkFun-Aesthetics" package="CREATIVE_COMMONS" value="FRAME-LEDGER" x="35.15041875" y="91.429840625" smashed="yes" rot="R180">
-<attribute name="DESIGNER" value="" x="35.15041875" y="91.429840625" size="1.778" layer="27" font="vector" ratio="15" rot="R180" display="off"/>
-<attribute name="REV" value="" x="35.15041875" y="91.429840625" size="1.778" layer="27" font="vector" ratio="15" rot="R180" display="off"/>
-</element>
 <element name="U28" library="Teensy" package="IMXRT1062" value="IMXRT1062DV10X10" x="36.00041875" y="58.849840625" smashed="yes" rot="R270">
 <attribute name="PROD_ID" value="IC-14904" x="36.00041875" y="58.849840625" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
@@ -6867,7 +6825,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <element name="FD38" library="SparkFun-Aesthetics" package="FIDUCIAL-MICRO" value="FIDUCIALUFIDUCIAL" x="41.70041875" y="48.549840625" smashed="yes" rot="R180"/>
 <element name="FD39" library="SparkFun-Aesthetics" package="FIDUCIAL-MICRO" value="FIDUCIALUFIDUCIAL" x="43.00041875" y="64.849840625" smashed="yes" rot="MR180"/>
 <element name="FD40" library="SparkFun-Aesthetics" package="FIDUCIAL-MICRO" value="FIDUCIALUFIDUCIAL" x="23.00041875" y="48.849840625" smashed="yes" rot="MR180"/>
-<element name="LOGO19" library="SparkFun-Aesthetics" package="SFE_LOGO_NAME_FLAME_.1" value="SFE_LOGO_NAME_FLAME.1_INCH" x="37.30041875" y="51.749840625" smashed="yes" rot="MR180"/>
+<element name="LOGO10" library="SparkFun-Aesthetics" package="SFE_LOGO_NAME_FLAME_.1" value="SFE_LOGO_NAME_FLAME.1_INCH" x="37.30041875" y="51.749840625" smashed="yes" rot="MR180"/>
 <element name="U29" library="Teensy" package="QFN-16" value="MKL02Z32VFG4" x="40.00041875" y="50.849840625" smashed="yes" rot="R270">
 <attribute name="NAME" x="42.25041875" y="52.649840625" size="0.6096" layer="25" font="vector" ratio="20" rot="R270"/>
 <attribute name="PROD_ID" value="IC-14906" x="40.00041875" y="50.849840625" size="1.778" layer="27" rot="R270" display="off"/>
@@ -6915,7 +6873,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <attribute name="PROD_ID" value="RES-13495" x="41.46041875" y="58.419840625" size="1.778" layer="28" font="vector" ratio="15" rot="MR0" display="off"/>
 <attribute name="VALUE" x="41.46041875" y="57.857840625" size="0.6096" layer="28" font="vector" ratio="20" rot="MR0" align="top-center"/>
 </element>
-<element name="LOGO20" library="SparkFun-Aesthetics" package="DUMMY" value="OSHW-LOGONO_SILK" x="31.75041875" y="91.429840625" smashed="yes" rot="R180"/>
 <element name="U30" library="SparkFun-MicroMod" package="WSON-8-6X5-SKINNY_CENTERPAD" value="W25QXX128MBIT-6X5" x="26.49041875" y="62.219840625" smashed="yes" rot="MR0">
 <attribute name="NAME" x="26.49041875" y="65.394840625" size="0.762" layer="26" rot="MR0" align="center"/>
 <attribute name="PROD_ID" value="IC-15107" x="26.49041875" y="62.219840625" size="1.778" layer="28" font="vector" ratio="15" rot="MR0" display="off"/>
@@ -6936,10 +6893,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <element name="U$90" library="SparkFun-MicroMod" package="MICROMOD_LOGO_.3" value="" x="27.61741875" y="52.567840625" smashed="yes" rot="MR180"/>
 <element name="TP129" library="SparkFun-Connectors" package="PAD.03X.03" value="" x="42.56041875" y="48.559840625" smashed="yes" rot="MR180"/>
 <element name="TP130" library="SparkFun-Connectors" package="PAD.03X.03" value="" x="33.24441875" y="48.704840625" smashed="yes" rot="MR180"/>
-<element name="FRAME11" library="SparkFun-Aesthetics" package="CREATIVE_COMMONS" value="FRAME-LEDGER" x="57.149359375" y="91.429840625" smashed="yes" rot="R180">
-<attribute name="DESIGNER" value="" x="57.149359375" y="91.429840625" size="1.778" layer="27" font="vector" ratio="15" rot="R180" display="off"/>
-<attribute name="REV" value="" x="57.149359375" y="91.429840625" size="1.778" layer="27" font="vector" ratio="15" rot="R180" display="off"/>
-</element>
 <element name="U31" library="Teensy" package="IMXRT1062" value="IMXRT1062DV10X10" x="57.999359375" y="58.849840625" smashed="yes" rot="R270">
 <attribute name="PROD_ID" value="IC-14904" x="57.999359375" y="58.849840625" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
@@ -7146,7 +7099,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <element name="FD42" library="SparkFun-Aesthetics" package="FIDUCIAL-MICRO" value="FIDUCIALUFIDUCIAL" x="63.699359375" y="48.549840625" smashed="yes" rot="R180"/>
 <element name="FD43" library="SparkFun-Aesthetics" package="FIDUCIAL-MICRO" value="FIDUCIALUFIDUCIAL" x="64.999359375" y="64.849840625" smashed="yes" rot="MR180"/>
 <element name="FD44" library="SparkFun-Aesthetics" package="FIDUCIAL-MICRO" value="FIDUCIALUFIDUCIAL" x="44.999359375" y="48.849840625" smashed="yes" rot="MR180"/>
-<element name="LOGO21" library="SparkFun-Aesthetics" package="SFE_LOGO_NAME_FLAME_.1" value="SFE_LOGO_NAME_FLAME.1_INCH" x="59.299359375" y="51.749840625" smashed="yes" rot="MR180"/>
+<element name="LOGO11" library="SparkFun-Aesthetics" package="SFE_LOGO_NAME_FLAME_.1" value="SFE_LOGO_NAME_FLAME.1_INCH" x="59.299359375" y="51.749840625" smashed="yes" rot="MR180"/>
 <element name="U32" library="Teensy" package="QFN-16" value="MKL02Z32VFG4" x="61.999359375" y="50.849840625" smashed="yes" rot="R270">
 <attribute name="NAME" x="64.249359375" y="52.649840625" size="0.6096" layer="25" font="vector" ratio="20" rot="R270"/>
 <attribute name="PROD_ID" value="IC-14906" x="61.999359375" y="50.849840625" size="1.778" layer="27" rot="R270" display="off"/>
@@ -7194,7 +7147,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <attribute name="PROD_ID" value="RES-13495" x="63.459359375" y="58.419840625" size="1.778" layer="28" font="vector" ratio="15" rot="MR0" display="off"/>
 <attribute name="VALUE" x="63.459359375" y="57.857840625" size="0.6096" layer="28" font="vector" ratio="20" rot="MR0" align="top-center"/>
 </element>
-<element name="LOGO22" library="SparkFun-Aesthetics" package="DUMMY" value="OSHW-LOGONO_SILK" x="53.749359375" y="91.429840625" smashed="yes" rot="R180"/>
 <element name="U33" library="SparkFun-MicroMod" package="WSON-8-6X5-SKINNY_CENTERPAD" value="W25QXX128MBIT-6X5" x="48.489359375" y="62.219840625" smashed="yes" rot="MR0">
 <attribute name="NAME" x="48.489359375" y="65.394840625" size="0.762" layer="26" rot="MR0" align="center"/>
 <attribute name="PROD_ID" value="IC-15107" x="48.489359375" y="62.219840625" size="1.778" layer="28" font="vector" ratio="15" rot="MR0" display="off"/>
@@ -7215,10 +7167,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <element name="U$99" library="SparkFun-MicroMod" package="MICROMOD_LOGO_.3" value="" x="49.616359375" y="52.567840625" smashed="yes" rot="MR180"/>
 <element name="TP142" library="SparkFun-Connectors" package="PAD.03X.03" value="" x="64.559359375" y="48.559840625" smashed="yes" rot="MR180"/>
 <element name="TP143" library="SparkFun-Connectors" package="PAD.03X.03" value="" x="55.243359375" y="48.704840625" smashed="yes" rot="MR180"/>
-<element name="FRAME12" library="SparkFun-Aesthetics" package="CREATIVE_COMMONS" value="FRAME-LEDGER" x="79.150840625" y="91.429840625" smashed="yes" rot="R180">
-<attribute name="DESIGNER" value="" x="79.150840625" y="91.429840625" size="1.778" layer="27" font="vector" ratio="15" rot="R180" display="off"/>
-<attribute name="REV" value="" x="79.150840625" y="91.429840625" size="1.778" layer="27" font="vector" ratio="15" rot="R180" display="off"/>
-</element>
 <element name="U34" library="Teensy" package="IMXRT1062" value="IMXRT1062DV10X10" x="80.000840625" y="58.849840625" smashed="yes" rot="R270">
 <attribute name="PROD_ID" value="IC-14904" x="80.000840625" y="58.849840625" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
@@ -7425,7 +7373,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <element name="FD46" library="SparkFun-Aesthetics" package="FIDUCIAL-MICRO" value="FIDUCIALUFIDUCIAL" x="85.700840625" y="48.549840625" smashed="yes" rot="R180"/>
 <element name="FD47" library="SparkFun-Aesthetics" package="FIDUCIAL-MICRO" value="FIDUCIALUFIDUCIAL" x="87.000840625" y="64.849840625" smashed="yes" rot="MR180"/>
 <element name="FD48" library="SparkFun-Aesthetics" package="FIDUCIAL-MICRO" value="FIDUCIALUFIDUCIAL" x="67.000840625" y="48.849840625" smashed="yes" rot="MR180"/>
-<element name="LOGO23" library="SparkFun-Aesthetics" package="SFE_LOGO_NAME_FLAME_.1" value="SFE_LOGO_NAME_FLAME.1_INCH" x="81.300840625" y="51.749840625" smashed="yes" rot="MR180"/>
+<element name="LOGO12" library="SparkFun-Aesthetics" package="SFE_LOGO_NAME_FLAME_.1" value="SFE_LOGO_NAME_FLAME.1_INCH" x="81.300840625" y="51.749840625" smashed="yes" rot="MR180"/>
 <element name="U35" library="Teensy" package="QFN-16" value="MKL02Z32VFG4" x="84.000840625" y="50.849840625" smashed="yes" rot="R270">
 <attribute name="NAME" x="86.250840625" y="52.649840625" size="0.6096" layer="25" font="vector" ratio="20" rot="R270"/>
 <attribute name="PROD_ID" value="IC-14906" x="84.000840625" y="50.849840625" size="1.778" layer="27" rot="R270" display="off"/>
@@ -7473,7 +7421,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <attribute name="PROD_ID" value="RES-13495" x="85.460840625" y="58.419840625" size="1.778" layer="28" font="vector" ratio="15" rot="MR0" display="off"/>
 <attribute name="VALUE" x="85.460840625" y="57.857840625" size="0.6096" layer="28" font="vector" ratio="20" rot="MR0" align="top-center"/>
 </element>
-<element name="LOGO24" library="SparkFun-Aesthetics" package="DUMMY" value="OSHW-LOGONO_SILK" x="75.750840625" y="91.429840625" smashed="yes" rot="R180"/>
 <element name="U36" library="SparkFun-MicroMod" package="WSON-8-6X5-SKINNY_CENTERPAD" value="W25QXX128MBIT-6X5" x="70.490840625" y="62.219840625" smashed="yes" rot="MR0">
 <attribute name="NAME" x="70.490840625" y="65.394840625" size="0.762" layer="26" rot="MR0" align="center"/>
 <attribute name="PROD_ID" value="IC-15107" x="70.490840625" y="62.219840625" size="1.778" layer="28" font="vector" ratio="15" rot="MR0" display="off"/>
@@ -7494,10 +7441,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <element name="U$108" library="SparkFun-MicroMod" package="MICROMOD_LOGO_.3" value="" x="71.617840625" y="52.567840625" smashed="yes" rot="MR180"/>
 <element name="TP155" library="SparkFun-Connectors" package="PAD.03X.03" value="" x="86.560840625" y="48.559840625" smashed="yes" rot="MR180"/>
 <element name="TP156" library="SparkFun-Connectors" package="PAD.03X.03" value="" x="77.244840625" y="48.704840625" smashed="yes" rot="MR180"/>
-<element name="FRAME13" library="SparkFun-Aesthetics" package="CREATIVE_COMMONS" value="FRAME-LEDGER" x="101.14978125" y="91.429840625" smashed="yes" rot="R180">
-<attribute name="DESIGNER" value="" x="101.14978125" y="91.429840625" size="1.778" layer="27" font="vector" ratio="15" rot="R180" display="off"/>
-<attribute name="REV" value="" x="101.14978125" y="91.429840625" size="1.778" layer="27" font="vector" ratio="15" rot="R180" display="off"/>
-</element>
 <element name="U37" library="Teensy" package="IMXRT1062" value="IMXRT1062DV10X10" x="101.99978125" y="58.849840625" smashed="yes" rot="R270">
 <attribute name="PROD_ID" value="IC-14904" x="101.99978125" y="58.849840625" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
@@ -7704,7 +7647,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <element name="FD50" library="SparkFun-Aesthetics" package="FIDUCIAL-MICRO" value="FIDUCIALUFIDUCIAL" x="107.69978125" y="48.549840625" smashed="yes" rot="R180"/>
 <element name="FD51" library="SparkFun-Aesthetics" package="FIDUCIAL-MICRO" value="FIDUCIALUFIDUCIAL" x="108.99978125" y="64.849840625" smashed="yes" rot="MR180"/>
 <element name="FD52" library="SparkFun-Aesthetics" package="FIDUCIAL-MICRO" value="FIDUCIALUFIDUCIAL" x="88.99978125" y="48.849840625" smashed="yes" rot="MR180"/>
-<element name="LOGO25" library="SparkFun-Aesthetics" package="SFE_LOGO_NAME_FLAME_.1" value="SFE_LOGO_NAME_FLAME.1_INCH" x="103.29978125" y="51.749840625" smashed="yes" rot="MR180"/>
+<element name="LOGO13" library="SparkFun-Aesthetics" package="SFE_LOGO_NAME_FLAME_.1" value="SFE_LOGO_NAME_FLAME.1_INCH" x="103.29978125" y="51.749840625" smashed="yes" rot="MR180"/>
 <element name="U38" library="Teensy" package="QFN-16" value="MKL02Z32VFG4" x="105.99978125" y="50.849840625" smashed="yes" rot="R270">
 <attribute name="NAME" x="108.24978125" y="52.649840625" size="0.6096" layer="25" font="vector" ratio="20" rot="R270"/>
 <attribute name="PROD_ID" value="IC-14906" x="105.99978125" y="50.849840625" size="1.778" layer="27" rot="R270" display="off"/>
@@ -7752,7 +7695,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <attribute name="PROD_ID" value="RES-13495" x="107.45978125" y="58.419840625" size="1.778" layer="28" font="vector" ratio="15" rot="MR0" display="off"/>
 <attribute name="VALUE" x="107.45978125" y="57.857840625" size="0.6096" layer="28" font="vector" ratio="20" rot="MR0" align="top-center"/>
 </element>
-<element name="LOGO26" library="SparkFun-Aesthetics" package="DUMMY" value="OSHW-LOGONO_SILK" x="97.74978125" y="91.429840625" smashed="yes" rot="R180"/>
 <element name="U39" library="SparkFun-MicroMod" package="WSON-8-6X5-SKINNY_CENTERPAD" value="W25QXX128MBIT-6X5" x="92.48978125" y="62.219840625" smashed="yes" rot="MR0">
 <attribute name="NAME" x="92.48978125" y="65.394840625" size="0.762" layer="26" rot="MR0" align="center"/>
 <attribute name="PROD_ID" value="IC-15107" x="92.48978125" y="62.219840625" size="1.778" layer="28" font="vector" ratio="15" rot="MR0" display="off"/>
@@ -7773,10 +7715,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <element name="U$117" library="SparkFun-MicroMod" package="MICROMOD_LOGO_.3" value="" x="93.61678125" y="52.567840625" smashed="yes" rot="MR180"/>
 <element name="TP168" library="SparkFun-Connectors" package="PAD.03X.03" value="" x="108.55978125" y="48.559840625" smashed="yes" rot="MR180"/>
 <element name="TP169" library="SparkFun-Connectors" package="PAD.03X.03" value="" x="99.24378125" y="48.704840625" smashed="yes" rot="MR180"/>
-<element name="FRAME14" library="SparkFun-Aesthetics" package="CREATIVE_COMMONS" value="FRAME-LEDGER" x="123.151259375" y="91.429840625" smashed="yes" rot="R180">
-<attribute name="DESIGNER" value="" x="123.151259375" y="91.429840625" size="1.778" layer="27" font="vector" ratio="15" rot="R180" display="off"/>
-<attribute name="REV" value="" x="123.151259375" y="91.429840625" size="1.778" layer="27" font="vector" ratio="15" rot="R180" display="off"/>
-</element>
 <element name="U40" library="Teensy" package="IMXRT1062" value="IMXRT1062DV10X10" x="124.001259375" y="58.849840625" smashed="yes" rot="R270">
 <attribute name="PROD_ID" value="IC-14904" x="124.001259375" y="58.849840625" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
@@ -7983,7 +7921,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <element name="FD54" library="SparkFun-Aesthetics" package="FIDUCIAL-MICRO" value="FIDUCIALUFIDUCIAL" x="129.701259375" y="48.549840625" smashed="yes" rot="R180"/>
 <element name="FD55" library="SparkFun-Aesthetics" package="FIDUCIAL-MICRO" value="FIDUCIALUFIDUCIAL" x="131.001259375" y="64.849840625" smashed="yes" rot="MR180"/>
 <element name="FD56" library="SparkFun-Aesthetics" package="FIDUCIAL-MICRO" value="FIDUCIALUFIDUCIAL" x="111.001259375" y="48.849840625" smashed="yes" rot="MR180"/>
-<element name="LOGO27" library="SparkFun-Aesthetics" package="SFE_LOGO_NAME_FLAME_.1" value="SFE_LOGO_NAME_FLAME.1_INCH" x="125.301259375" y="51.749840625" smashed="yes" rot="MR180"/>
+<element name="LOGO14" library="SparkFun-Aesthetics" package="SFE_LOGO_NAME_FLAME_.1" value="SFE_LOGO_NAME_FLAME.1_INCH" x="125.301259375" y="51.749840625" smashed="yes" rot="MR180"/>
 <element name="U41" library="Teensy" package="QFN-16" value="MKL02Z32VFG4" x="128.001259375" y="50.849840625" smashed="yes" rot="R270">
 <attribute name="NAME" x="130.251259375" y="52.649840625" size="0.6096" layer="25" font="vector" ratio="20" rot="R270"/>
 <attribute name="PROD_ID" value="IC-14906" x="128.001259375" y="50.849840625" size="1.778" layer="27" rot="R270" display="off"/>
@@ -8031,7 +7969,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <attribute name="PROD_ID" value="RES-13495" x="129.461259375" y="58.419840625" size="1.778" layer="28" font="vector" ratio="15" rot="MR0" display="off"/>
 <attribute name="VALUE" x="129.461259375" y="57.857840625" size="0.6096" layer="28" font="vector" ratio="20" rot="MR0" align="top-center"/>
 </element>
-<element name="LOGO28" library="SparkFun-Aesthetics" package="DUMMY" value="OSHW-LOGONO_SILK" x="119.751259375" y="91.429840625" smashed="yes" rot="R180"/>
 <element name="U42" library="SparkFun-MicroMod" package="WSON-8-6X5-SKINNY_CENTERPAD" value="W25QXX128MBIT-6X5" x="114.491259375" y="62.219840625" smashed="yes" rot="MR0">
 <attribute name="NAME" x="114.491259375" y="65.394840625" size="0.762" layer="26" rot="MR0" align="center"/>
 <attribute name="PROD_ID" value="IC-15107" x="114.491259375" y="62.219840625" size="1.778" layer="28" font="vector" ratio="15" rot="MR0" display="off"/>
@@ -8052,10 +7989,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <element name="U$126" library="SparkFun-MicroMod" package="MICROMOD_LOGO_.3" value="" x="115.618259375" y="52.567840625" smashed="yes" rot="MR180"/>
 <element name="TP181" library="SparkFun-Connectors" package="PAD.03X.03" value="" x="130.561259375" y="48.559840625" smashed="yes" rot="MR180"/>
 <element name="TP182" library="SparkFun-Connectors" package="PAD.03X.03" value="" x="121.245259375" y="48.704840625" smashed="yes" rot="MR180"/>
-<element name="FRAME15" library="SparkFun-Aesthetics" package="CREATIVE_COMMONS" value="FRAME-LEDGER" x="145.1502" y="91.429840625" smashed="yes" rot="R180">
-<attribute name="DESIGNER" value="" x="145.1502" y="91.429840625" size="1.778" layer="27" font="vector" ratio="15" rot="R180" display="off"/>
-<attribute name="REV" value="" x="145.1502" y="91.429840625" size="1.778" layer="27" font="vector" ratio="15" rot="R180" display="off"/>
-</element>
 <element name="U43" library="Teensy" package="IMXRT1062" value="IMXRT1062DV10X10" x="146.0002" y="58.849840625" smashed="yes" rot="R270">
 <attribute name="PROD_ID" value="IC-14904" x="146.0002" y="58.849840625" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
@@ -8262,7 +8195,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <element name="FD58" library="SparkFun-Aesthetics" package="FIDUCIAL-MICRO" value="FIDUCIALUFIDUCIAL" x="151.7002" y="48.549840625" smashed="yes" rot="R180"/>
 <element name="FD59" library="SparkFun-Aesthetics" package="FIDUCIAL-MICRO" value="FIDUCIALUFIDUCIAL" x="153.0002" y="64.849840625" smashed="yes" rot="MR180"/>
 <element name="FD60" library="SparkFun-Aesthetics" package="FIDUCIAL-MICRO" value="FIDUCIALUFIDUCIAL" x="133.0002" y="48.849840625" smashed="yes" rot="MR180"/>
-<element name="LOGO29" library="SparkFun-Aesthetics" package="SFE_LOGO_NAME_FLAME_.1" value="SFE_LOGO_NAME_FLAME.1_INCH" x="147.3002" y="51.749840625" smashed="yes" rot="MR180"/>
+<element name="LOGO15" library="SparkFun-Aesthetics" package="SFE_LOGO_NAME_FLAME_.1" value="SFE_LOGO_NAME_FLAME.1_INCH" x="147.3002" y="51.749840625" smashed="yes" rot="MR180"/>
 <element name="U44" library="Teensy" package="QFN-16" value="MKL02Z32VFG4" x="150.0002" y="50.849840625" smashed="yes" rot="R270">
 <attribute name="NAME" x="152.2502" y="52.649840625" size="0.6096" layer="25" font="vector" ratio="20" rot="R270"/>
 <attribute name="PROD_ID" value="IC-14906" x="150.0002" y="50.849840625" size="1.778" layer="27" rot="R270" display="off"/>
@@ -8310,7 +8243,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <attribute name="PROD_ID" value="RES-13495" x="151.4602" y="58.419840625" size="1.778" layer="28" font="vector" ratio="15" rot="MR0" display="off"/>
 <attribute name="VALUE" x="151.4602" y="57.857840625" size="0.6096" layer="28" font="vector" ratio="20" rot="MR0" align="top-center"/>
 </element>
-<element name="LOGO30" library="SparkFun-Aesthetics" package="DUMMY" value="OSHW-LOGONO_SILK" x="141.7502" y="91.429840625" smashed="yes" rot="R180"/>
 <element name="U45" library="SparkFun-MicroMod" package="WSON-8-6X5-SKINNY_CENTERPAD" value="W25QXX128MBIT-6X5" x="136.4902" y="62.219840625" smashed="yes" rot="MR0">
 <attribute name="NAME" x="136.4902" y="65.394840625" size="0.762" layer="26" rot="MR0" align="center"/>
 <attribute name="PROD_ID" value="IC-15107" x="136.4902" y="62.219840625" size="1.778" layer="28" font="vector" ratio="15" rot="MR0" display="off"/>
@@ -8331,10 +8263,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <element name="U$135" library="SparkFun-MicroMod" package="MICROMOD_LOGO_.3" value="" x="137.6172" y="52.567840625" smashed="yes" rot="MR180"/>
 <element name="TP194" library="SparkFun-Connectors" package="PAD.03X.03" value="" x="152.5602" y="48.559840625" smashed="yes" rot="MR180"/>
 <element name="TP195" library="SparkFun-Connectors" package="PAD.03X.03" value="" x="143.2442" y="48.704840625" smashed="yes" rot="MR180"/>
-<element name="FRAME16" library="SparkFun-Aesthetics" package="CREATIVE_COMMONS" value="FRAME-LEDGER" x="167.149140625" y="91.429840625" smashed="yes" rot="R180">
-<attribute name="DESIGNER" value="" x="167.149140625" y="91.429840625" size="1.778" layer="27" font="vector" ratio="15" rot="R180" display="off"/>
-<attribute name="REV" value="" x="167.149140625" y="91.429840625" size="1.778" layer="27" font="vector" ratio="15" rot="R180" display="off"/>
-</element>
 <element name="U46" library="Teensy" package="IMXRT1062" value="IMXRT1062DV10X10" x="167.999140625" y="58.849840625" smashed="yes" rot="R270">
 <attribute name="PROD_ID" value="IC-14904" x="167.999140625" y="58.849840625" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
@@ -8541,7 +8469,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <element name="FD62" library="SparkFun-Aesthetics" package="FIDUCIAL-MICRO" value="FIDUCIALUFIDUCIAL" x="173.699140625" y="48.549840625" smashed="yes" rot="R180"/>
 <element name="FD63" library="SparkFun-Aesthetics" package="FIDUCIAL-MICRO" value="FIDUCIALUFIDUCIAL" x="174.999140625" y="64.849840625" smashed="yes" rot="MR180"/>
 <element name="FD64" library="SparkFun-Aesthetics" package="FIDUCIAL-MICRO" value="FIDUCIALUFIDUCIAL" x="154.999140625" y="48.849840625" smashed="yes" rot="MR180"/>
-<element name="LOGO31" library="SparkFun-Aesthetics" package="SFE_LOGO_NAME_FLAME_.1" value="SFE_LOGO_NAME_FLAME.1_INCH" x="169.299140625" y="51.749840625" smashed="yes" rot="MR180"/>
+<element name="LOGO16" library="SparkFun-Aesthetics" package="SFE_LOGO_NAME_FLAME_.1" value="SFE_LOGO_NAME_FLAME.1_INCH" x="169.299140625" y="51.749840625" smashed="yes" rot="MR180"/>
 <element name="U47" library="Teensy" package="QFN-16" value="MKL02Z32VFG4" x="171.999140625" y="50.849840625" smashed="yes" rot="R270">
 <attribute name="NAME" x="174.249140625" y="52.649840625" size="0.6096" layer="25" font="vector" ratio="20" rot="R270"/>
 <attribute name="PROD_ID" value="IC-14906" x="171.999140625" y="50.849840625" size="1.778" layer="27" rot="R270" display="off"/>
@@ -8589,7 +8517,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <attribute name="PROD_ID" value="RES-13495" x="173.459140625" y="58.419840625" size="1.778" layer="28" font="vector" ratio="15" rot="MR0" display="off"/>
 <attribute name="VALUE" x="173.459140625" y="57.857840625" size="0.6096" layer="28" font="vector" ratio="20" rot="MR0" align="top-center"/>
 </element>
-<element name="LOGO32" library="SparkFun-Aesthetics" package="DUMMY" value="OSHW-LOGONO_SILK" x="163.749140625" y="91.429840625" smashed="yes" rot="R180"/>
 <element name="U48" library="SparkFun-MicroMod" package="WSON-8-6X5-SKINNY_CENTERPAD" value="W25QXX128MBIT-6X5" x="158.489140625" y="62.219840625" smashed="yes" rot="MR0">
 <attribute name="NAME" x="158.489140625" y="65.394840625" size="0.762" layer="26" rot="MR0" align="center"/>
 <attribute name="PROD_ID" value="IC-15107" x="158.489140625" y="62.219840625" size="1.778" layer="28" font="vector" ratio="15" rot="MR0" display="off"/>
@@ -8854,7 +8781,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="20.7" y1="9.500159375" x2="21" y2="9.500159375" width="0.1016" layer="1"/>
 <wire x1="20.7" y1="9.500159375" x2="20.35" y2="9.150159375" width="0.1016" layer="1"/>
 </signal>
-<signal name="MISO/12">
+<signal name="CIPO/12">
 <contactref element="U1" pad="E7"/>
 <via x="4.97855" y="3.219159375" extent="1-16" drill="0.2"/>
 <wire x1="4.6278" y1="3.569909375" x2="4.6278" y2="6.145809375" width="0.1016" layer="16"/>
@@ -8874,7 +8801,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <contactref element="J1" pad="61"/>
 <wire x1="5.25" y1="1.285159375" x2="5.25" y2="2.015353125" width="0.1016" layer="1"/>
 </signal>
-<signal name="MOSI/11">
+<signal name="COPI/11">
 <contactref element="U1" pad="E8"/>
 <via x="5.477" y="3.427159375" extent="1-16" drill="0.2"/>
 <wire x1="6.375" y1="11.325159375" x2="6.05" y2="11.000159375" width="0.1016" layer="1"/>
@@ -11359,7 +11286,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="42.698940625" y1="9.500159375" x2="42.998940625" y2="9.500159375" width="0.1016" layer="1"/>
 <wire x1="42.698940625" y1="9.500159375" x2="42.348940625" y2="9.150159375" width="0.1016" layer="1"/>
 </signal>
-<signal name="MISO/1">
+<signal name="CIPO/1">
 <contactref element="U2" pad="E7"/>
 <via x="26.977490625" y="3.219159375" extent="1-16" drill="0.2"/>
 <wire x1="26.626740625" y1="3.569909375" x2="26.626740625" y2="6.145809375" width="0.1016" layer="16"/>
@@ -11379,7 +11306,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <contactref element="J2" pad="61"/>
 <wire x1="27.248940625" y1="1.285159375" x2="27.248940625" y2="2.015353125" width="0.1016" layer="1"/>
 </signal>
-<signal name="MOSI/1">
+<signal name="COPI/1">
 <contactref element="U2" pad="E8"/>
 <via x="27.475940625" y="3.427159375" extent="1-16" drill="0.2"/>
 <wire x1="28.373940625" y1="11.325159375" x2="28.048940625" y2="11.000159375" width="0.1016" layer="1"/>
@@ -13864,7 +13791,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="64.70041875" y1="9.500159375" x2="65.00041875" y2="9.500159375" width="0.1016" layer="1"/>
 <wire x1="64.70041875" y1="9.500159375" x2="64.35041875" y2="9.150159375" width="0.1016" layer="1"/>
 </signal>
-<signal name="MISO/2">
+<signal name="CIPO/2">
 <contactref element="U7" pad="E7"/>
 <via x="48.97896875" y="3.219159375" extent="1-16" drill="0.2"/>
 <wire x1="48.62821875" y1="3.569909375" x2="48.62821875" y2="6.145809375" width="0.1016" layer="16"/>
@@ -13884,7 +13811,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <contactref element="J3" pad="61"/>
 <wire x1="49.25041875" y1="1.285159375" x2="49.25041875" y2="2.015353125" width="0.1016" layer="1"/>
 </signal>
-<signal name="MOSI/2">
+<signal name="COPI/2">
 <contactref element="U7" pad="E8"/>
 <via x="49.47741875" y="3.427159375" extent="1-16" drill="0.2"/>
 <wire x1="50.37541875" y1="11.325159375" x2="50.05041875" y2="11.000159375" width="0.1016" layer="1"/>
@@ -16369,7 +16296,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="86.699359375" y1="9.500159375" x2="86.999359375" y2="9.500159375" width="0.1016" layer="1"/>
 <wire x1="86.699359375" y1="9.500159375" x2="86.349359375" y2="9.150159375" width="0.1016" layer="1"/>
 </signal>
-<signal name="MISO/3">
+<signal name="CIPO/3">
 <contactref element="U10" pad="E7"/>
 <via x="70.977909375" y="3.219159375" extent="1-16" drill="0.2"/>
 <wire x1="70.627159375" y1="3.569909375" x2="70.627159375" y2="6.145809375" width="0.1016" layer="16"/>
@@ -16389,7 +16316,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <contactref element="J4" pad="61"/>
 <wire x1="71.249359375" y1="1.285159375" x2="71.249359375" y2="2.015353125" width="0.1016" layer="1"/>
 </signal>
-<signal name="MOSI/3">
+<signal name="COPI/3">
 <contactref element="U10" pad="E8"/>
 <via x="71.476359375" y="3.427159375" extent="1-16" drill="0.2"/>
 <wire x1="72.374359375" y1="11.325159375" x2="72.049359375" y2="11.000159375" width="0.1016" layer="1"/>
@@ -18874,7 +18801,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="108.700840625" y1="9.500159375" x2="109.000840625" y2="9.500159375" width="0.1016" layer="1"/>
 <wire x1="108.700840625" y1="9.500159375" x2="108.350840625" y2="9.150159375" width="0.1016" layer="1"/>
 </signal>
-<signal name="MISO/4">
+<signal name="CIPO/4">
 <contactref element="U13" pad="E7"/>
 <via x="92.979390625" y="3.219159375" extent="1-16" drill="0.2"/>
 <wire x1="92.628640625" y1="3.569909375" x2="92.628640625" y2="6.145809375" width="0.1016" layer="16"/>
@@ -18894,7 +18821,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <contactref element="J5" pad="61"/>
 <wire x1="93.250840625" y1="1.285159375" x2="93.250840625" y2="2.015353125" width="0.1016" layer="1"/>
 </signal>
-<signal name="MOSI/4">
+<signal name="COPI/4">
 <contactref element="U13" pad="E8"/>
 <via x="93.477840625" y="3.427159375" extent="1-16" drill="0.2"/>
 <wire x1="94.375840625" y1="11.325159375" x2="94.050840625" y2="11.000159375" width="0.1016" layer="1"/>
@@ -21379,7 +21306,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="130.69978125" y1="9.500159375" x2="130.99978125" y2="9.500159375" width="0.1016" layer="1"/>
 <wire x1="130.69978125" y1="9.500159375" x2="130.34978125" y2="9.150159375" width="0.1016" layer="1"/>
 </signal>
-<signal name="MISO/5">
+<signal name="CIPO/5">
 <contactref element="U16" pad="E7"/>
 <via x="114.97833125" y="3.219159375" extent="1-16" drill="0.2"/>
 <wire x1="114.62758125" y1="3.569909375" x2="114.62758125" y2="6.145809375" width="0.1016" layer="16"/>
@@ -21399,7 +21326,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <contactref element="J6" pad="61"/>
 <wire x1="115.24978125" y1="1.285159375" x2="115.24978125" y2="2.015353125" width="0.1016" layer="1"/>
 </signal>
-<signal name="MOSI/5">
+<signal name="COPI/5">
 <contactref element="U16" pad="E8"/>
 <via x="115.47678125" y="3.427159375" extent="1-16" drill="0.2"/>
 <wire x1="116.37478125" y1="11.325159375" x2="116.04978125" y2="11.000159375" width="0.1016" layer="1"/>
@@ -23884,7 +23811,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="152.701259375" y1="9.500159375" x2="153.001259375" y2="9.500159375" width="0.1016" layer="1"/>
 <wire x1="152.701259375" y1="9.500159375" x2="152.351259375" y2="9.150159375" width="0.1016" layer="1"/>
 </signal>
-<signal name="MISO/6">
+<signal name="CIPO/6">
 <contactref element="U19" pad="E7"/>
 <via x="136.979809375" y="3.219159375" extent="1-16" drill="0.2"/>
 <wire x1="136.629059375" y1="3.569909375" x2="136.629059375" y2="6.145809375" width="0.1016" layer="16"/>
@@ -23904,7 +23831,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <contactref element="J7" pad="61"/>
 <wire x1="137.251259375" y1="1.285159375" x2="137.251259375" y2="2.015353125" width="0.1016" layer="1"/>
 </signal>
-<signal name="MOSI/6">
+<signal name="COPI/6">
 <contactref element="U19" pad="E8"/>
 <via x="137.478259375" y="3.427159375" extent="1-16" drill="0.2"/>
 <wire x1="138.376259375" y1="11.325159375" x2="138.051259375" y2="11.000159375" width="0.1016" layer="1"/>
@@ -26389,7 +26316,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="174.7002" y1="9.500159375" x2="175.0002" y2="9.500159375" width="0.1016" layer="1"/>
 <wire x1="174.7002" y1="9.500159375" x2="174.3502" y2="9.150159375" width="0.1016" layer="1"/>
 </signal>
-<signal name="MISO/7">
+<signal name="CIPO/7">
 <contactref element="U22" pad="E7"/>
 <via x="158.97875" y="3.219159375" extent="1-16" drill="0.2"/>
 <wire x1="158.628" y1="3.569909375" x2="158.628" y2="6.145809375" width="0.1016" layer="16"/>
@@ -26409,7 +26336,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <contactref element="J8" pad="61"/>
 <wire x1="159.2502" y1="1.285159375" x2="159.2502" y2="2.015353125" width="0.1016" layer="1"/>
 </signal>
-<signal name="MOSI/7">
+<signal name="COPI/7">
 <contactref element="U22" pad="E8"/>
 <via x="159.4772" y="3.427159375" extent="1-16" drill="0.2"/>
 <wire x1="160.3752" y1="11.325159375" x2="160.0502" y2="11.000159375" width="0.1016" layer="1"/>
@@ -28894,7 +28821,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="1.298940625" y1="60.349840625" x2="0.998940625" y2="60.349840625" width="0.1016" layer="1"/>
 <wire x1="1.298940625" y1="60.349840625" x2="1.648940625" y2="60.699840625" width="0.1016" layer="1"/>
 </signal>
-<signal name="MISO/8">
+<signal name="CIPO/8">
 <contactref element="U25" pad="E7"/>
 <via x="17.020390625" y="66.630840625" extent="1-16" drill="0.2"/>
 <wire x1="17.371140625" y1="66.280090625" x2="17.371140625" y2="63.704190625" width="0.1016" layer="16"/>
@@ -28914,7 +28841,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <contactref element="J9" pad="61"/>
 <wire x1="16.748940625" y1="68.564840625" x2="16.748940625" y2="67.834646875" width="0.1016" layer="1"/>
 </signal>
-<signal name="MOSI/8">
+<signal name="COPI/8">
 <contactref element="U25" pad="E8"/>
 <via x="16.521940625" y="66.422840625" extent="1-16" drill="0.2"/>
 <wire x1="15.623940625" y1="58.524840625" x2="15.948940625" y2="58.849840625" width="0.1016" layer="1"/>
@@ -31399,7 +31326,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="23.30041875" y1="60.349840625" x2="23.00041875" y2="60.349840625" width="0.1016" layer="1"/>
 <wire x1="23.30041875" y1="60.349840625" x2="23.65041875" y2="60.699840625" width="0.1016" layer="1"/>
 </signal>
-<signal name="MISO/9">
+<signal name="CIPO/9">
 <contactref element="U28" pad="E7"/>
 <via x="39.02186875" y="66.630840625" extent="1-16" drill="0.2"/>
 <wire x1="39.37261875" y1="66.280090625" x2="39.37261875" y2="63.704190625" width="0.1016" layer="16"/>
@@ -31419,7 +31346,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <contactref element="J10" pad="61"/>
 <wire x1="38.75041875" y1="68.564840625" x2="38.75041875" y2="67.834646875" width="0.1016" layer="1"/>
 </signal>
-<signal name="MOSI/9">
+<signal name="COPI/9">
 <contactref element="U28" pad="E8"/>
 <via x="38.52341875" y="66.422840625" extent="1-16" drill="0.2"/>
 <wire x1="37.62541875" y1="58.524840625" x2="37.95041875" y2="58.849840625" width="0.1016" layer="1"/>
@@ -33904,7 +33831,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="45.299359375" y1="60.349840625" x2="44.999359375" y2="60.349840625" width="0.1016" layer="1"/>
 <wire x1="45.299359375" y1="60.349840625" x2="45.649359375" y2="60.699840625" width="0.1016" layer="1"/>
 </signal>
-<signal name="MISO/10">
+<signal name="CIPO/10">
 <contactref element="U31" pad="E7"/>
 <via x="61.020809375" y="66.630840625" extent="1-16" drill="0.2"/>
 <wire x1="61.371559375" y1="66.280090625" x2="61.371559375" y2="63.704190625" width="0.1016" layer="16"/>
@@ -33924,7 +33851,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <contactref element="J11" pad="61"/>
 <wire x1="60.749359375" y1="68.564840625" x2="60.749359375" y2="67.834646875" width="0.1016" layer="1"/>
 </signal>
-<signal name="MOSI/10">
+<signal name="COPI/10">
 <contactref element="U31" pad="E8"/>
 <via x="60.522359375" y="66.422840625" extent="1-16" drill="0.2"/>
 <wire x1="59.624359375" y1="58.524840625" x2="59.949359375" y2="58.849840625" width="0.1016" layer="1"/>
@@ -36409,7 +36336,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="67.300840625" y1="60.349840625" x2="67.000840625" y2="60.349840625" width="0.1016" layer="1"/>
 <wire x1="67.300840625" y1="60.349840625" x2="67.650840625" y2="60.699840625" width="0.1016" layer="1"/>
 </signal>
-<signal name="MISO/11">
+<signal name="CIPO/11">
 <contactref element="U34" pad="E7"/>
 <via x="83.022290625" y="66.630840625" extent="1-16" drill="0.2"/>
 <wire x1="83.373040625" y1="66.280090625" x2="83.373040625" y2="63.704190625" width="0.1016" layer="16"/>
@@ -36429,7 +36356,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <contactref element="J12" pad="61"/>
 <wire x1="82.750840625" y1="68.564840625" x2="82.750840625" y2="67.834646875" width="0.1016" layer="1"/>
 </signal>
-<signal name="MOSI/12">
+<signal name="COPI/12">
 <contactref element="U34" pad="E8"/>
 <via x="82.523840625" y="66.422840625" extent="1-16" drill="0.2"/>
 <wire x1="81.625840625" y1="58.524840625" x2="81.950840625" y2="58.849840625" width="0.1016" layer="1"/>
@@ -38914,7 +38841,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="89.29978125" y1="60.349840625" x2="88.99978125" y2="60.349840625" width="0.1016" layer="1"/>
 <wire x1="89.29978125" y1="60.349840625" x2="89.64978125" y2="60.699840625" width="0.1016" layer="1"/>
 </signal>
-<signal name="MISO/13">
+<signal name="CIPO/13">
 <contactref element="U37" pad="E7"/>
 <via x="105.02123125" y="66.630840625" extent="1-16" drill="0.2"/>
 <wire x1="105.37198125" y1="66.280090625" x2="105.37198125" y2="63.704190625" width="0.1016" layer="16"/>
@@ -38934,7 +38861,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <contactref element="J13" pad="61"/>
 <wire x1="104.74978125" y1="68.564840625" x2="104.74978125" y2="67.834646875" width="0.1016" layer="1"/>
 </signal>
-<signal name="MOSI/13">
+<signal name="COPI/13">
 <contactref element="U37" pad="E8"/>
 <via x="104.52278125" y="66.422840625" extent="1-16" drill="0.2"/>
 <wire x1="103.62478125" y1="58.524840625" x2="103.94978125" y2="58.849840625" width="0.1016" layer="1"/>
@@ -41419,7 +41346,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="111.301259375" y1="60.349840625" x2="111.001259375" y2="60.349840625" width="0.1016" layer="1"/>
 <wire x1="111.301259375" y1="60.349840625" x2="111.651259375" y2="60.699840625" width="0.1016" layer="1"/>
 </signal>
-<signal name="MISO/14">
+<signal name="CIPO/14">
 <contactref element="U40" pad="E7"/>
 <via x="127.022709375" y="66.630840625" extent="1-16" drill="0.2"/>
 <wire x1="127.373459375" y1="66.280090625" x2="127.373459375" y2="63.704190625" width="0.1016" layer="16"/>
@@ -41439,7 +41366,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <contactref element="J14" pad="61"/>
 <wire x1="126.751259375" y1="68.564840625" x2="126.751259375" y2="67.834646875" width="0.1016" layer="1"/>
 </signal>
-<signal name="MOSI/14">
+<signal name="COPI/14">
 <contactref element="U40" pad="E8"/>
 <via x="126.524259375" y="66.422840625" extent="1-16" drill="0.2"/>
 <wire x1="125.626259375" y1="58.524840625" x2="125.951259375" y2="58.849840625" width="0.1016" layer="1"/>
@@ -43924,7 +43851,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="133.3002" y1="60.349840625" x2="133.0002" y2="60.349840625" width="0.1016" layer="1"/>
 <wire x1="133.3002" y1="60.349840625" x2="133.6502" y2="60.699840625" width="0.1016" layer="1"/>
 </signal>
-<signal name="MISO/15">
+<signal name="CIPO/15">
 <contactref element="U43" pad="E7"/>
 <via x="149.02165" y="66.630840625" extent="1-16" drill="0.2"/>
 <wire x1="149.3724" y1="66.280090625" x2="149.3724" y2="63.704190625" width="0.1016" layer="16"/>
@@ -43944,7 +43871,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <contactref element="J15" pad="61"/>
 <wire x1="148.7502" y1="68.564840625" x2="148.7502" y2="67.834646875" width="0.1016" layer="1"/>
 </signal>
-<signal name="MOSI/15">
+<signal name="COPI/15">
 <contactref element="U43" pad="E8"/>
 <via x="148.5232" y="66.422840625" extent="1-16" drill="0.2"/>
 <wire x1="147.6252" y1="58.524840625" x2="147.9502" y2="58.849840625" width="0.1016" layer="1"/>
@@ -46429,7 +46356,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="155.299140625" y1="60.349840625" x2="154.999140625" y2="60.349840625" width="0.1016" layer="1"/>
 <wire x1="155.299140625" y1="60.349840625" x2="155.649140625" y2="60.699840625" width="0.1016" layer="1"/>
 </signal>
-<signal name="MISO/16">
+<signal name="CIPO/16">
 <contactref element="U46" pad="E7"/>
 <via x="171.020590625" y="66.630840625" extent="1-16" drill="0.2"/>
 <wire x1="171.371340625" y1="66.280090625" x2="171.371340625" y2="63.704190625" width="0.1016" layer="16"/>
@@ -46449,7 +46376,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <contactref element="J16" pad="61"/>
 <wire x1="170.749140625" y1="68.564840625" x2="170.749140625" y2="67.834646875" width="0.1016" layer="1"/>
 </signal>
-<signal name="MOSI/16">
+<signal name="COPI/16">
 <contactref element="U46" pad="E8"/>
 <via x="170.522140625" y="66.422840625" extent="1-16" drill="0.2"/>
 <wire x1="169.624140625" y1="58.524840625" x2="169.949140625" y2="58.849840625" width="0.1016" layer="1"/>
