@@ -15,8 +15,8 @@ Repository Contents
 
 Documentation
 --------------
-* **[Hookup Guide](https://learn.sparkfun.com/tutorials/micromod-teensy-processor-board-hookup-guide)** - Basic hookup guide for the SparkFun MicroMod Teensy Processor Board
-* **[MicroMod Info Page](https://ww.sparkfun.com/micromod)** - MicroMod Information Page
+* **[Hookup Guide](https://learn.sparkfun.com/tutorials/micromod-teensy-processor-hookup-guide)** - Basic hookup guide for the SparkFun MicroMod Teensy Processor Board
+* **[MicroMod Info Page](https://www.sparkfun.com/micromod)** - MicroMod Information Page
 
 Version History
 ---------------
