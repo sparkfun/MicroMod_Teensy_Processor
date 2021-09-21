@@ -1,0 +1,13 @@
+panel size, 189x70mm
+PCB thickness, 0.8mm
+number of layers, 4
+bevel, Gold Fingers + 45° Finger Chamfered
+soldermask color, Red
+silkscreen color, White
+oz copper, 1oz
+finish, ENIG
+stencils, none
+pcs per panel, 16
+min trace width, 0.1016mm / 0.0040in
+min drill size, 0.2000mm / 0.0079in
+filename to layer stackup 1/2/3/4: GTL, GL2, GL3, GBL
