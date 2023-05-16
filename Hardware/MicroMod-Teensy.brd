@@ -4725,7 +4725,7 @@ Out</text>
 <wire x1="3.3138625" y1="8.0911375" x2="3.015" y2="8.39" width="0.1016" layer="15"/>
 <wire x1="8.65" y1="8.34" x2="8.4011375" y2="8.0911375" width="0.1016" layer="15"/>
 </signal>
-<signal name="38/DAT3">
+<signal name="39/DAT3">
 <contactref element="J1" pad="70"/>
 <contactref element="U1" pad="J2"/>
 <wire x1="8.975" y1="7.415" x2="8.67535" y2="7.11535" width="0.1016" layer="1"/>
@@ -6442,7 +6442,7 @@ Out</text>
 <wire x1="9.354290625" y1="10.370290625" x2="7.960209375" y2="10.370290625" width="0.1016" layer="15"/>
 <wire x1="11.3238875" y1="10.0114" x2="10.1179125" y2="10.0114" width="0.1016" layer="15"/>
 </signal>
-<signal name="39/DAT2">
+<signal name="38/DAT2">
 <contactref element="U1" pad="H2"/>
 <contactref element="J1" pad="68"/>
 <wire x1="8.325" y1="7.415" x2="8.325" y2="7.1459875" width="0.1016" layer="1"/>
