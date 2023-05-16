@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.6.2">
+<eagle version="9.6.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="yes"/>
@@ -20793,7 +20793,7 @@ battery or external power</text>
 <pinref part="J1" gate="J1" pin="SPI_SDO1/SDIO_CMD"/>
 </segment>
 </net>
-<net name="38/DAT3" class="0">
+<net name="39/DAT3" class="0">
 <segment>
 <wire x1="297.18" y1="241.3" x2="299.72" y2="241.3" width="0.1524" layer="91"/>
 <label x="299.72" y="241.3" size="1.27" layer="95" xref="yes"/>
@@ -21908,7 +21908,7 @@ battery or external power</text>
 <label x="398.78" y="218.44" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
-<net name="39/DAT2" class="0">
+<net name="38/DAT2" class="0">
 <segment>
 <wire x1="162.56" y1="93.98" x2="165.1" y2="93.98" width="0.1524" layer="91"/>
 <pinref part="U1" gate="U1" pin="SD_B0_04"/>
